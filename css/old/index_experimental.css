@@ -1,0 +1,345 @@
+/* @charset "UTF-8"; */
+html, body, #map {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* BODY */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+
+/* BANNER */
+.hero-image {
+  background-image: url("../images/banner_test4.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+/*  padding: 10em 0em 10em 0em*/
+  
+}
+
+
+@media screen and (max-width:600px) {
+
+.hero-image {
+  background-image: url("../images/banner_test5.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  /*padding: 10em 0em 10em 0em*/
+  
+  }
+
+} 
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+
+.hero-text button {
+  background-color: white;
+  box-shadow: inset 0 0 0 2px #CC0000;
+  color: black;
+  border-radius: 300px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3.75em;
+  line-height: 3.85em;
+  letter-spacing: 1.5px;
+  padding: 0 5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+
+
+.hero-text button:hover {
+  box-shadow: inset 0 0 0 2px #44CC00;
+}
+
+
+
+/* MEDIA MENU */
+.media-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px 0px 5px;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+}
+
+.media-menu h2 {
+    font-size: 18px;
+}
+
+/* media-menu lists */
+.media-menu li {
+  float: left;
+  width: 33.33%;
+}
+
+/* media-menu links */
+.media-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* media-menu colors */
+.media-menu li a:hover {
+  color:  rgb(0,255,51);
+}
+
+
+/* SECCIÓN DESTACADOS */
+/* GENERAL */
+.seccion-principal {
+    text-align: left;
+    /*padding: 1em 0.5em 0em 0.5em;*/
+    width: 85%;
+    margin: 0 auto;    
+}
+
+.seccion-principal h2 {
+    text-align: center;
+    /*padding: 15px;*/
+    font-size: 48px;
+}
+
+
+/* Formato de los links */
+.seccion-principal a {
+    color:  black;
+    /*margin: auto;*/
+    text-decoration: none;    
+}
+
+.seccion-principal a:visited {
+  text-decoration: none;    
+  color: black;
+}
+
+
+
+/* COLUMNAS */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 0px 0px 30px 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 10px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 170px;
+  width: 200px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the three columns
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+/* FOOTER */
+.index-footer {
+  padding: 1em 0 2em 0;
+  background-color: rgb(40,40,40);
+  color: rgb(0,255,51);
+  width: 100%;
+}
+
+/*
+.index-footer li {
+    display: inline;
+}
+*/
+
+.index-footer a {
+    color:  rgb(0,255,51);
+    margin: auto;
+}
+
+
+/* unvisited link
+.index-footer a:link {
+  color: red;
+}
+*/
+
+/* visited link
+.index-footer a:visited {
+  color: green;
+}
+*/
+
+
+/* mouse over link */
+.index-footer a:hover {
+  color: hotpink;
+}
+
+
+/* selected link 
+.index-footer a:active {
+  color: blue;
+}
+*/
+
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-footer h1 {
+    text-align: center;
+}
+
+.index-footer h3 {
+    text-align: center;
+}
+
+.index-footer p {
+    text-align: center;
+}
+
+.index-footer a {
+    margin: auto;
+}
+
+
+/* Crea 4 equal columns that floats next to each other */
+.footer-column {
+  float: left;
+  width: 25%;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  /*height: 300px; 
+  margin: 10px;*/
+}
+
+.footer-column li {
+    padding: 0px 0px 12px 0px;
+}
+
+.footer-column a {
+  text-decoration: none;    
+  /*color: black;*/
+}
+
+.footer-column a:visited {
+  text-decoration: none;    
+  /*color: black;*/
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+ /* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 50px;
+  width: 10px;
+  height: 8px;
+  font-color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #833AB4;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
+
+/* Github */
+.fa-github {
+  background: #211F1F;
+  color: white;
+} 
+

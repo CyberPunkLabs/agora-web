@@ -1,0 +1,211 @@
+/* @charset "UTF-8"; */
+html, body, #map {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* BODY */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+
+/* NAVBAR */
+.navbar-secundaria {
+  overflow: hidden;
+  background-color: #333; 
+  width: 100%;
+  /* position: fixed; */
+  /* height: 110px; */
+}
+
+.navbar-secundaria a {
+  float: right;
+  font-size: 14px;
+  color: white;
+  text-align: right;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+.navbar-secundaria a:hover {
+  background-color: #4CAF50;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.columna-tutorial {
+  float: left;
+  width: 30%;
+  padding: 0px 0px 0px 15px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 10px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the three columns
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columna-tutorial {
+    width: 100%;
+  }
+}
+
+
+.subpaginas {
+    text-align: left;
+    padding: 1em 0.5em 0em 0.5em;
+    width: 90%;
+    margin: 0 auto;    
+}
+
+.cabecera h1 {
+    text-align: center;
+    padding: 15px;
+    font-size: 56px;
+}
+
+.cabecera p {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+/* FOOTER */
+.index-footer {
+  padding: 1em 0 2em 0;
+  background-color: rgb(40,40,40);
+  color: rgb(0,255,51);
+  width: 100%;
+}
+
+/*
+.index-footer li {
+    display: inline;
+}
+*/
+
+.index-footer a {
+    color: rgb(0,255,51);
+    margin: auto;
+}
+
+
+/* unvisited link
+.index-footer a:link {
+  color: red;
+}
+*/
+
+/* visited link
+.index-footer a:visited {
+  color: green;
+}
+*/
+
+
+/* mouse over link */
+.index-footer a:hover {
+  color: hotpink;
+}
+
+
+/* selected link 
+.index-footer a:active {
+  color: blue;
+}
+*/
+
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-footer h1 {
+    text-align: center;
+}
+
+.index-footer h3 {
+    text-align: center;
+}
+
+.index-footer p {
+    text-align: center;
+}
+
+.index-footer a {
+    margin: auto;
+}
+
+
+/* Crea 4 equal columns that floats next to each other */
+.footer-column {
+  float: left;
+  width: 24%;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  /*height: 300px; 
+  margin: 10px;*/
+}
+
+.footer-column li {
+    padding: 0px 0px 12px 0px;
+}
+
+.footer-column a {
+  text-decoration: none;    
+  /*color: black;*/
+}
+
+.footer-column a:visited {
+  text-decoration: none;    
+  /*color: black;*/
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .footer-column {
+    width: 100%;
+  }
+}

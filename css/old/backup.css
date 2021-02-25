@@ -1,0 +1,328 @@
+/* @charset "UTF-8"; */
+
+@import url(font-awesome.min.css);
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: monospace; */
+}
+
+
+/*
+// Vertical menu
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+*/
+
+
+// Top nav
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+*/
+
+.column {
+  float: left;
+  width: 33.33%;
+} 
+
+.column a {
+    font-size: 20px;
+}
+
+
+.image.right {
+  float: right;
+ /*  padding: 0 1.5em 1em 0;
+  top: 0.25em; */
+}
+
+.main-section {
+    background-image: url(../../images/matrix.gif);
+    background-size: cover;
+    font-family: 'Orbitron', courier, sans-serif;
+    font-size: 17px;
+    background-color: rgb(30,30,30);
+    padding: 1em 1em 1.5em 0.5em;
+}
+
+.main-section h2 {
+    font-size: 40px;
+    color: rgb(20,20,20);
+}
+
+.main-section li {
+    display: inline;
+}
+
+.h1 {
+  display: block;
+  color: rgb(230,230,230);
+  text-shadow: 2px 2px black;
+  font-size: 4.5em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.column a {
+    color: rgb(200,200,200);
+}
+
+
+.row {
+    padding: 0 0 10em 0;
+}
+
+.destacados {
+    background-color: rgb(10,10,10);
+    border-left: 3px solid red;
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-radius: 8px;
+    color: rgb(0,200,0);
+    font-size: 16px;
+    text-align: left;
+    padding: 0 1em 2em 1em;
+}
+
+.destacados a {
+    color: red;
+}
+
+
+.commands {
+    background-color: rgb(10,10,10);
+    border-left: 5px solid grey;
+    border-right: 2px solid grey;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-radius: 8px;
+    color: rgb(250,250,250);
+    //font-size: 20px;
+    text-align: left;
+    padding: 0.3em 0em 0.5em 0.5em;
+}
+
+
+
+
+#banner {
+    padding: 5em 0em 5em 0em;
+    background-color: rgb(0,0,0);
+    background-image: url(file:///home/diogenes/projects/agora/html/images/banner2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    /* opacity: 0.5; */
+}
+
+#banner a {
+    color: red;
+
+}
+
+.p-menu {
+    color: rgb(0,250,0);
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+
+.button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px #6cc091;
+  color: #6cc091 !important;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .75em;
+  font-weight: 400;
+  height: 3.75em;
+  line-height: 3.85em;
+  letter-spacing: 1.5px;
+  padding: 0 4em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 12px;
+}
+
+
+.main-footer {
+    padding: 1em 0 2em 0;
+    background-color: rgb(0,0,0);
+    color: green;
+}
+
+.main-footer li {
+    display: inline;
+}
+
+.main-footer a {
+    color: rgb(0,0,0);
+}
+
+
+
+
+/* blinking cursor */
+#header {
+  display: flex;
+  align-items: baseline;
+  margin: 0px;
+}
+
+
+#cursor {
+  background: lime;
+  line-height: 17px;
+  margin-left: 3px;
+  -webkit-animation: blink 0.8s infinite;
+  width: 7px;
+  height: 15px;
+}
+
+
+@-webkit-keyframes blink {
+  0% {background: #222}
+  50% {background: lime}
+  100% {background: #222}
+}
+
+.tutorials a {
+    // color: white;
+}
+
+.productores {
+    padding: 1em 0 5em 0;
+    background-color: rgb(0,0,0);
+    background-image: url(../../logos/banner2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    /* opacity: 0.5; */
+}
+
+
+.button-productores li {
+    display: inline;
+}
+
+
+
+/* Flex */
+
+.flex {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.flex.flex-2 {
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+
+.flex.flex-2 article {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 980px) {
+    .flex.flex-2 article {
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .flex.flex-2 article:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .flex.flex-2 br {
+        display: none;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>El Ágora</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" /> 
+</head>
+
+
+<!-- BODY -->
+<body>
+
+
+<!-- HEADER: NAVBAR
+<header>
+<div class="navbar">
+
+  <div class="subnav">
+    <button class="subnavbtn">Ed<br>Lib <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#">Artículos académicos</a>
+      <a href="#">Tutoriales en línea</a>
+      <a href="#">DIY</a>
+      <a href="#">Vinculos con escuelas</a>
+    </div>
+  </div>
+
+
+  <div class="subnav">
+    <button class="subnavbtn">Econ<br>y RRSS <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#">Red de productores</a>
+      <a href="#">Medios</a>
+      <a href="#">Obras comunidad</a>
+      <a href="#">Contramercado</a>
+    </div>
+  </div> 
+
+
+  <div class="subnav">
+    <button class="subnavbtn">Cs y<br>Tecs <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#">Análisis de datos</a>
+      <a href="#">Equipos de ciencia</a>
+      <a href="#">Acceso a servidores</a>
+    </div>
+  </div> 
+
+  <div class="subnav">
+    <button class="subnavbtn">ÁGORA <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#">Inicio</a>
+      <a href="#">Acerca de...</a>
+      <a href="#">¡Únete!</a>
+    </div>
+  </div>
+
+</div>
+
+</header>
+-->
+
+<!-- Three -->
+<section>
+
+  <div class="tutorials" style="color:black;">
+    <header class="align-center">
+      <h1 class="h1">Tutoriales</h1>
+      <!-- <p>Somos una red de sistemas nerviosos distribuidos alrededor del globo</p> -->
+    </header>
+  
+  <hr>
+    <h3>¿Quieres subir tu tutorial?</h3>
+    <p>¡Sólo escríbenos!</p>
+<hr>
+    
+  <h4>Aprende a analizar datos con Python, utilizando la CASEM</h4>
+  <p>| <a href="#">Parte I:</a> Instalar Python | <a href="#">Parte II:</a> Cargar datos desde un excel o un .csv | <a href="#">Parte III:</a> Curar fácilmente los datos | <a href="#">Parte IV:</a> Obtener promedios, desviaciones estándar y gráficos personalizados | <a href="#">Parte V:</a> Introducción a la estadística con Python | <a href="#">Parte VI:</a> Estadísticos en la CASEM | <a href="#">Parte VII:</a> ¡Aplícalo a lo que quieras!</p> 
+
+  <hr>
+
+  <h4>Revisa nuestro tutorial de inferencia bayesiana utilizando un experimento de control cognitivo</h4>
+  <p><a href="tutoriales/rainclouds_plots_testing.html"> Rainclouds plots</a></p> 
+
+  <hr>
+
+  <h4>Cómo montar un servidor como este</h4>
+  <p><a href="tutoriales/servidor.html">Seguridad de servidores</a></p>
+
+  <hr>
+
+  <h4>¿Quieres aprender a analizar señales electroencefalográficas?</h4>
+  <p>Descripción</p>
+
+  <hr>
+  
+  <h4>¿Algo que aportar??</h4>
+  <p>Cuéntanos en nuestro canal de IRC</p>
+
+  <hr>
+  
+  <h4>¿Quieres participar, pero no sabes cómo?</h4>
+  <p>Simple: ¡escríbenos!</p>
+
+</div>
+  
+</section>
+
+
+
+<!-- Main footer -->
+<footer class="main-footer">
+<div align="center">
+  <p>##########################################################</p>
+  <h3>Contáctanos en <br>
+  <i>agora@protonmail.com</i></h3>
+
+<div>
+  <ul marker-style="none">
+    <li><a href="#" style="color:blue;">Twitter</a></li>
+    <li><a href="#" style="color:blue;">Facebook</a></li>
+    <li><a href="#" style="color:blue;">Instagram</a></li>
+  </ul>
+</div>
+
+
+<h4>¡No requiere estudios ni experiencia previa!</h4>
+<p>Los servidores de los CyberPunk Labs son de propiedad de todxs quienes los utilizan.<br />Revisa nuestra <a href="filosofia.html" style="color:red"> filosofía política, sistema de propiedad comunitario y licencia Copyleft</a>.<br /><br />
+
+
+<div class="copyright">
+Diseño: <a href="#" style="color:green;">Maldito Beto - Chaka Art.</a> 
+</div>
+
+</div>
+</footer>
+
+
+</body>
+</html>

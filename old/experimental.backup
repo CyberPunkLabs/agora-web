@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>El Ágora</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
+
+</head>
+
+
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:70px">El Ágora</h1>
+    <p style="font-size:20px">Ciencia y Tecnología | Economía y RRSS | Educación libertaria</p>
+
+    <br><br>
+    <button>¡Únete! *</button>
+    <br>
+    
+    <p style="font-size:18px">Lee nuestra <a href="filosofia.html">filosofía política</a> y el <a href="slowscience.html">Slow science manifesto</a></p>
+    <p style="font-size:18px">* No requiere estudios ni experiencia previa</p>
+    
+  </div>
+</div>
+
+
+<section>
+  <div class="row">
+  
+  <div class="column1" style="background-color:#aaa;">
+    <a href="productores/productores.html">    
+    
+    </a>
+  </div>
+
+  <div class="column1" style="background-color:#aaa;">
+    <a href="" onclick="window.open('senalonline.php', '','width=450,height=167')">
+    </a>
+    
+  </div>
+</section>
+
+
+<!-- MEDIA MENU -->
+<section>
+<div>
+  <ul class="media-menu">  
+  <!-- Item 1 -->
+  <li><a href="" onclick="window.open('senalonline.php', '','width=450,height=167')">
+    <h2>Investiga con nosotros</h2>
+    <p>Te asesoramos en el diseño, análisis y publicación</p>      
+  </a></li>
+
+
+  <li><a href="" onclick="window.open('senalonline.php', '','width=450,height=167')">
+    <h2>Lee nuestra filosofía política y sistema de propiedad comunitario</h2>
+    <p>Adscribimos al Slow Science manifesto</p>
+  </a></li>
+
+
+  <li><a href="" onclick="window.open('senalonline.php', '','width=450,height=167')">
+    <h2>Accede a nuestros servidores</h2>
+    <p>Nuestros servidores son de propiedad de quienes los utilicen</p>
+  </a></li>
+  
+  </ul>
+</div>
+
+</section>
+
+
+
+<section class="seccion-principal">
+<h2 style="font-size:42px;">Destacamos</h2>
+
+<div class="row">
+  
+  <div class="column"> <!--style="background-color:#aaa;" -->
+    <a href="productores/productores.html">    
+    <h3>Red de economía local</h3>
+    <img src="images/arduino.png" alt="Girl in a jacket" class="center"> 
+
+    <p>Accede a nuestra red geolocalizada de farmacias no coludidas, pequeños y medianos productores, y mucho más. ¡Inscríbete gratis!</p>
+    </a>
+  </div>
+
+  <div class="column">
+    <a href="" onclick="window.open('senalonline.php', '','width=450,height=167')">
+    <h3>Early jazz radio [Señal online]</h3>
+    <img src="images/arduino.png" alt="Girl in a jacket" class="center">     
+    <p>Cintas inéditas de los inicios de Bird, Thelonious, Dizzie, Sinatra y muchos otros. Donada por David W. Nieven al dominio público alojado en archive.org.</p>
+    </a>
+    
+  </div>
+  <div class="column">
+    <a href="tutoriales.html">    
+    <h3>Tutoriales</h3>
+    <img src="images/arduino.png" alt="Girl in a jacket" class="center">         
+    <p>Aprende con nuestros tutoriales, desde migrar de Excel a Python o R hasta aprender a seguridad informática y programación. Además, te mostramos cómo montar un servidor como este.</p>
+    </a>
+  </div>
+
+</div>
+
+<br>
+
+
+<!-- Segunda fila -->
+<div class="row">
+
+  <div class="column">
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/CyberPunkLabs">    
+    <h3>Laboratorios CyberPunk</h3>
+    <img src="images/arduino.png" alt="Girl in a jacket" class="center">     
+    <p>Si se puede hackear, hackéalo. Revisa los equipos de ciencia y economía sustentable desarrollados a bajo costo por los Laboratorios Cyberpunk.</p>
+    </a>
+  </div>
+
+  <div class="column">
+    <a href="diccionario-neolengua/inicio.html">    
+    <h3><i>I Diccionario de Neolengua Española</i></h3>
+    <img src="images/arduino.png" alt="Girl in a jacket" class="center">         
+    <p>Una comunidad secreta se encuentra desarrollando una Wiki con el I Diccionario de Neolengua Española. Su meta es tener una lengua castellana libre de fascimo de aquí a 2030.</p>
+    </a>
+  </div>
+
+  <div class="column">
+    <a href="revista.html">        
+    <h3>Revista autogestionada</h3>
+    <img src="images/arduino.png" alt="Girl in a jacket" class="center">         
+    <p>Lee la primera Revista Autogestionada de Ciencias y Humanidades, con artículos de alto estándar académico escritos en lenguaje de divulgación. En su primer volumen: Política y Evolución.</p>
+    </a>
+  </div>
+
+</div>
+
+<br><br><br>
+
+
+</section>
+
+
+
+</body>
+</html>
+
+

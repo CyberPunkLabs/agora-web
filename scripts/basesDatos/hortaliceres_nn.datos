@@ -1,0 +1,448 @@
+// Nn
+L.marker([-33.3920816,-70.6139342], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Del Valle<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.1881735132313,-70.6607013372956], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Abate Juan Ignacio Molina 2010<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.2188499,-70.6621747], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Santa Filomena 32<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3662105,-70.8240491], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N° 47 Peralillo<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.294081,-70.8401138], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N 56B Flor De Chile. Lampa<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3059749,-70.8459985], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Isla Azore Nº 1641 Cerro Navia<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3161211,-70.8531893], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Callejon Rio De Janeiro Nº97. Lampa<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3034432,-70.8534306], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Pasaje Domingo Jara Vasquez N°508<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.2945129592904,-70.8545529365539], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Miraflores 6783. Renca<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7773313651849,-70.8932748007812], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-645<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7783929949769,-70.9021844339966], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-645<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7896541,-70.9073093], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Callejón Lo Garzo. 069<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7786816502652,-70.9113254023193], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7909377,-70.9149103], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-635.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7289,-70.92703], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-615. 6318<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7289,-70.92703], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-615. 6318<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.5038108,-70.9353799], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Diego De Almagro. 1827<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8653036,-70.9358246], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-424<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7790221,-70.9382664], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-635.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.75633,-70.9432755], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-615. 24<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.849367862869,-70.9509973832283], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Longitudinal Norte. Sector: Montenegro-Los Ermitaños<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7893181,-70.9512216], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-635<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8746366,-70.9529322], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Longitudinal Norte. Sector: Montenegro-Los Ermitaños 688<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7803622,-70.9547986], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Santa Isabel<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7699969,-70.9643028], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Pablo De Rokha.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8376627,-70.968872], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Morandé 15<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8363357,-70.9705379], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>España. 171<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7880059,-70.9751408], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>El Ñilhue Sin Número<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7912867,-70.9776966], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>El Carmelo<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8208745530686,-71.0141645397461], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8238318119462,-71.016310306958], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8308278616739,-71.0179410900391], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8254702,-71.0230608], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E. 9225<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8289668,-71.0254372], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8287363169301,-71.0261808361328], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8171237416613,-71.0265241588867], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8228208,-71.0287389], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-311.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8228226,-71.02874], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-311<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.826567,-71.0289629], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8280256,-71.0334033], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8268711,-71.0336639], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 13 Lote 1<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8270385,-71.0345765], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8206355,-71.034631], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.826936,-71.0346459], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8242598045692,-71.0372052156006], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8210861723217,-71.0386643373047], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8286194,-71.039881], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E. 35<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8286194,-71.039881], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E. 35<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8197745482955,-71.0412844833008], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8180434028115,-71.0443743880859], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8123916,-71.0470203], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8119892,-71.0470376], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 7 La Sombra<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8237536,-71.0486749], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8123647,-71.0499204], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E. 39<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8257455,-71.0499454], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Sitio N°48 Los Pinos Romeral. Hijuela<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8256851,-71.0499911], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela San Juan 1<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8256637,-71.0500149], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela San Juan. Romeral N°2. Hijuela<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8251447,-71.0530074], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E. 32<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8251457,-71.05301], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E. 32<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.4265685,-71.0536064], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº 1 Miraflores<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.809477,-71.053839], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8153114,-71.0560901], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8153116,-71.0560925], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8087778,-71.0569943], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8087786,-71.0570028], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8253886,-71.057395], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8251686,-71.0598198], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8143418273335,-71.0602936708008], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8261758,-71.0603307], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8231037,-71.060488], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8453613879156,-71.0632969024658], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8215056600462,-71.0673770125977], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-313<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.4986308,-71.0677429], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N#8 Santa Emilia. María Pinto<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8201206861638,-71.0725521544678], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.826356223336,-71.074846836499], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8243366999639,-71.0778509105957], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8232547935546,-71.0793958629883], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8250729,-71.0796846], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Longitudinal Norte. Sector: Montenegro-Los Ermitaños. 755<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8534293,-71.0802978], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8458230746376,-71.0805497132812], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-300<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8304492,-71.0807666], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8304492,-71.0807666], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8304492,-71.0807666], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8304492,-71.0807666], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Purehue. Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8304492,-71.0807666], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8304492,-71.0807666], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Purehue. Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8281571,-71.0842201], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela13 Los Aromos B<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8281623,-71.0848837], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8558745,-71.0862033], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8573924,-71.0880987], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8302841,-71.0926], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8467161,-71.0931115], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Puente Aconcagua. 100<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.822058,-71.0938452], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8307616,-71.0939531], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Catemu. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8544015,-71.0978956], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8491616,-71.1034439], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Los Maitenes Parcela 12; Ocoa<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.4775986455705,-71.1036630988121], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 23 Santa Emilia. Maria Pinto<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.4663389,-71.1061779], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Santa Emilia S/N. María Pinto<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8390798,-71.1065176], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E. 7305<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8500386,-71.1130482], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 1 Lote 3<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.473362,-71.11413], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº 30 Santa Emilia<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.855273644407,-71.1173330272949], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8411225686868,-71.1178454574219], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.5165197,-71.1236185], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N°28 Ranchillo<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.4823355,-71.1271894], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N18  Santa Emilia. María Pinto<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8164697775593,-71.1286148988281], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.828446,-71.1296949], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Panamericana Norte. 131<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.2459560929122,-71.1325384576416], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-315<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8150279,-71.1378744], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-328.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8123657,-71.1401832], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-301-E 2982<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7995168957581,-71.1410603486572], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7980018,-71.1437211], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7980018,-71.1437211], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.79891,-71.1464112], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Manuel Rodríguez 1425<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.79773,-71.14654], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Manuel Rodríguez. 1245<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.5050343,-71.1488886], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N #12 El Rosario. María Pinto<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.486663446308,-71.154336732626], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº57 El Luchador. Maria Pinto<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8151713733132,-71.1569390260254], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Hijuelas. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7561212198888,-71.1571369390784], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7813062302747,-71.1572670439941], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Manuel Rodríguez 86<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8272757889075,-71.1587008651367], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-300<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7958883,-71.1600783], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Panamericana Norte. 600<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.76965,-71.16032], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7960992,-71.1605635], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Manuel Rodriguez 396<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7510234572153,-71.1624977854004], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-317<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7788963,-71.16432], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-303. 7<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7826312387997,-71.1657159656067], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>El Olivo 3<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7418728639811,-71.1671332986725], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7378869576247,-71.1689172710693], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Nogales. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7457268,-71.1720471], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-320.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7224988717728,-71.1721784901856], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Nogales. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7548778532259,-71.1724762120728], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-317<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7428983,-71.1732708], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-320. Parcela B1 N° 281 La Peña. Nogales<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6862063495525,-71.1743242573975], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Nogales. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7305621832057,-71.174347351001], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7690241318917,-71.174994418988], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7723291,-71.1754937], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7383846,-71.1775988], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-320.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7747803,-71.1782599], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-303.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7607846,-71.1794981], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 299 La Peña<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7727511749796,-71.1827360119141], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Calera. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7351975636503,-71.1844500716797], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-320<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6973324675808,-71.1871271575806], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7614833318782,-71.1877996754883], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Nogales. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6985784196313,-71.190635486972], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7275022582774,-71.1952686365508], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-320<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8493264887051,-71.1962596539974], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 16. Pocochay<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4432637,-71.1965657], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Esmeralda<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6889173215516,-71.1970406020996], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-121<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0118783344059,-71.2005647723198], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Las Cruces S.N. Olmue<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.694939829731,-71.2013750518677], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-121 526<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9020353635339,-71.2018587708473], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº22 Los Almendros<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6809327752527,-71.2044079137085], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.87785,-71.20467], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-326<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6963642,-71.206887], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-121<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6888187,-71.209203], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Panamericana Norte.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8555174295296,-71.2095325708389], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 37; San Jorge;Pocochay<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6813301101913,-71.2097723317383], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Panamericana Norte<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8559011,-71.2101148], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>San Jorge<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6884096,-71.2108023], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>El Melón. Nogales. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.894782551414,-71.2112920999527], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 37. La Palma<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6899717077479,-71.2121648621796], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Los Alamos<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8907167,-71.2126157], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 23 Las Pataguas. La Palma. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4353145,-71.214494], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Calle Miraflores 1715<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8598471,-71.21531], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Paraddero 8 Parcela 2. La Puntilla.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7342205514689,-71.2160132196655], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Juan Rusque 440<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4450941859798,-71.2204078422363], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Esmeralda 290<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4435753,-71.2234108], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>A Valle Hermoso 96<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9030419,-71.2238294], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela #45 San Isidro. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8409601,-71.2270975], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Pasaje Ricardo Cordova 150<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0112873,-71.228209], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Avenida Jose Tomás Urmeneta. 998<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8813259,-71.2285734], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Asentamiento El Condor Parcela 14 La Palma<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6795240280454,-71.2289125752686], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Nogales. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7169811962562,-71.2294028070679], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Nogales. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7188693,-71.2304752], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7188693,-71.2304752], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.897652642156,-71.2317843441487], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 9 La Tetera<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7105710631166,-71.2338304550781], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Nogales. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.900943,-71.236452], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N#9 San Isidro. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4528083,-71.2405168], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Diego Portales 1705<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0357952,-71.2423626], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 14 A ; Los Leones<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-29.9933897834219,-71.2427103225708], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcel Nº8 Pan De Azucar. Coquimbo<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0354389,-71.2434013], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Los Leones Sitio 13<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0335143,-71.2434943], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Avenida Jose Tomás Urmeneta. N° 999<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4535798542255,-71.2445497179688], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Camino De Acceso Poniente 1340<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0468869,-71.2453697], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Avenida Jose Tomás Urmeneta. 998<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.89172,-71.24711], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Juan Bautista Alberdi. 35<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0301734,-71.247143], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 2-A Los Leones<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0431582,-71.2481554], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N*4 Los Leones. Lliu Lliu<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.456002,-71.2490798], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Talanquen 160<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4532208,-71.2499938], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Diego Portales. 1500<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4413566641523,-71.2557148436767], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>La Ligua. Región De Valparaíso. Chile<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9087108,-71.2564861], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Huerto Llaiquen Lote Nº 3. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9904233,-71.2587864], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Eastman 561<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9090177,-71.2608066], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Chacra Las Mercedes Paradero 3<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8618364,-71.2609741], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>La Capilla. 190<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.907877943828,-71.2639975070953], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>San Francisco Paradero 3. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.8997384,-71.2670925], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Camino Troncal Paradero 3 San Pedro<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9425713,-71.2693503], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Los Laureles. 053<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.908208,-71.274065], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Camino Troncal Sn San Pedro<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9198544,-71.2787356], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº 8 Paradero 8 Camino Troncal. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9785931,-71.2875374], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Los Aromos 19<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9174596,-71.2925679], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela La Vega Lotes 2A Bien Común 3. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.3194073173053,-71.2943342137451], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-253<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9303849,-71.3043103], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº 5. Carolmo<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3556597809125,-71.3146188378334], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 36-A La Vinilla Norte. Casablanca<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3553502,-71.3156965], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>La Vinilla Norte S N<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.4475023,-71.317699], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>E-39 150<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9204047,-71.322127], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N#9 Rauten. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9211824,-71.3232074], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº22 Rauten. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9168316637678,-71.3286751214981], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 7. Carolmo. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9304346,-71.3349248], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N18 Rauten. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9222198490157,-71.3500950753689], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº5 Carolmo. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.0938253,-71.3543563], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-572.<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7502576644613,-71.3566431258728], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-220<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3439286,-71.3592074], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela 2B Mundo Nuevo. Casablanca<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3438034,-71.3659744], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>F-90<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.6000687897689,-71.3778519133789], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Unnamed Road<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-33.3337673,-71.3803962], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela N°22 Puente Tapihue Casablanca<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.91643394857,-71.4067831705544], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Las Araucarias<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9266753,-71.4082286], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº6 Carolmo. Quillota<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.7229166419932,-71.4110673986725], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Alcalde Juan José Mena 11<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-32.9293959,-71.4283743], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº 16 La Victoria. Limache<br>tel: NN').addTo(hortaliceres);
+// Nn
+L.marker([-30.5997277610529,-71.4938735485077], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Parcela Nº61 Lote E Los Olivos<br>tel: NN').addTo(hortaliceres);

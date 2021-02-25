@@ -1,0 +1,290 @@
+/* @charset "UTF-8"; */
+
+/* BODY */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: Liberation, serif;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+
+/* NAVBAR */
+.navbar-secundaria {
+  overflow: hidden;
+  background-color: #333; 
+  width: 100%;
+  font-family: monospace;
+  /* position: fixed; */
+  /* height: 110px; */
+}
+
+.navbar-secundaria a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: right;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+.navbar-secundaria a:hover {
+  color: rgb(0,255,51);
+}
+
+
+.articulo {
+    width: 50%;
+    font-size: 18px;
+    text-align: left;
+    padding: 1em 0.1em 3em 0.3em;
+    margin: 0 auto;
+    line-height : 30px;
+    /*background-image: url("../images/pagina5.jpeg");
+    background-color: #F5ECCE;*/
+}
+
+
+/* Responsive layout - makes the three columns
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .articulo {
+    width: 90%;
+  }
+}
+
+.articulo h1 {
+    padding: 15px;
+    font-size: 48px;
+    text-align: center;
+    line-height : 55px;
+    
+}
+
+.articulo h3 {
+    font-size: 22px;
+    margin-top: 2.5em ;
+    
+}
+
+.articulo p {
+    font-size: 18px;
+    margin-top: 1em ;
+    margin-bottom: 2em ;
+
+}
+
+
+/* SUBPAGINAS */
+.subheaders {
+    /*text-align: center;*/
+    /*padding: 1em 0.5em 0em 0.5em;*/
+    width: 100%;
+    /* margin: 0 auto; */
+
+}
+
+.subheaders h1 {
+  text-align: center;
+  /*padding: 15px;*/
+  font-size: 48px;
+}
+
+.subheaders h2 {
+  text-align: center;
+  /*padding: 15px;*/
+  font-size: 24px;
+}
+
+.subheaders hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: rgb( 81, 90, 90 ); /* Modern Browsers */
+} 
+
+
+.subpaginas {
+    text-align: left;
+    padding: 1em 0.5em 0em 0.5em;
+    width: 75%;
+    /* margin: 0 auto; */
+}
+
+
+@media screen and (max-width: 600px) {
+ .subpaginas {
+    width: 90%;
+  }
+}
+
+
+.subpaginas p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.subpaginas hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: rgb(28, 40, 51); /* Modern Browsers */
+} 
+
+
+.scripts {
+    //float: left;
+    text-align: left;
+    padding: 1em 0.5em 0em 1em;
+    width: 75%;
+    //margin: 0 auto;    
+}
+
+.scripts h1 {
+    text-align: center;
+    padding: 15px;
+    font-size: 28px;
+}
+
+.scripts p {
+    fontsize: 18px;
+    text-align: center;
+}
+
+.comando {
+    background-color: rgb(40,40,40);
+    //border-left: 5px solid grey;
+    //border-right: 2px solid grey;
+    //border-top: 2px solid grey;
+    //border-bottom: 2px solid grey;
+    border-radius: 3px;
+    color: rgb(0,255,51);
+    //font-size: 20px;
+    text-align: left;
+    padding: 0.3em 0em 0.5em 0.5em;
+    margin: 0.5em;
+}
+
+
+.texto {
+    background-color: rgb(230,230,230);
+    //border-left: 1px solid black;
+    //border-right: 1px solid black;
+    //border-top: 1px solid black;
+    //border-bottom: 1px solid black;
+    border-radius: 0px;
+    color: rgb(40,40,40);
+    //font-size: 20px;
+    text-align: left;
+    padding: 0.3em 0em 0.5em 0.5em;
+    margin: 0.5em;
+}
+
+
+.redes-sociales {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* FOOTER */
+.index-footer {
+  padding: 1em 0 2em 0;
+  background-color: rgb(40,40,40);
+  color: rgb(0,255,51);
+  width: 100%;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.index-footer a {
+    color: rgb(0,255,51);
+    margin: auto;
+}
+
+
+/* mouse over link */
+.index-footer a:hover {
+    color: white; /*hotpink;*/
+}
+
+
+/* selected link 
+.index-footer a:active {
+  color: blue;
+}
+*/
+
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-footer h1 {
+    text-align: center;
+}
+
+.index-footer h3 {
+    text-align: center;
+}
+
+.index-footer p {
+    text-align: center;
+}
+
+.index-footer a {
+    margin: auto;
+}
+
+
+/* Crea 4 equal columns that floats next to each other */
+.footer-column {
+  float: left;
+  width: 24%;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  /*height: 300px; 
+  margin: 10px;*/
+}
+
+.footer-column li {
+    padding: 0px 0px 12px 0px;
+}
+
+.footer-column a {
+  text-decoration: none;    
+  /*color: black;*/
+}
+
+.footer-column a:visited {
+  text-decoration: none;    
+  /*color: black;*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .footer-column {
+    width: 100%;
+  }
+}
+

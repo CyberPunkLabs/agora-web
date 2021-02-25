@@ -1,0 +1,11 @@
+Basta modificar los parámetros siguientes en el fichero /etc/rkhunter.cfg
+
+UPDATE_MIRRORS=0
+MIRRORS_MODE=1
+WEB_CMD=“/bin/false”
+
+con los siguientes valores…
+
+UPDATE_MIRRORS=1
+MIRRORS_MODE=0
+WEB_CMD=“”

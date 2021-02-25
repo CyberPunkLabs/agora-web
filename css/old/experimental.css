@@ -1,0 +1,98 @@
+/* @charset "UTF-8"; */
+html, body, #map {
+    height: 100vh;
+    width: 100vw;
+}
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+.hero-image {
+  background-image: url("images/banner_test4.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+/*  padding: 10em 0em 10em 0em*/
+  
+}
+
+
+@media screen and (max-width:600px) {
+
+.hero-image {
+  background-image: url("images/banner_test5.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  /*padding: 10em 0em 10em 0em*/
+  
+  }
+
+} 
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+/*
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+*/
+
+.hero-text button {
+  background-color: white;
+  box-shadow: inset 0 0 0 3px #6cc091;
+  color: black;
+  border-radius: 300px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .75em;
+  font-weight: 400;
+  height: 3.75em;
+  line-height: 3.85em;
+  letter-spacing: 1.5px;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+
+
+.hero-text button:hover {
+  background-color: #6cc091;
+  color: white;
+}
+
+
+
+</style>

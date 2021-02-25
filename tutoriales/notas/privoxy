@@ -1,0 +1,2 @@
+forward-socks4 127.0.0.1:9050 .
+forwardsocks4a 127.0.0.1:9050 .

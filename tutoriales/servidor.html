@@ -1,0 +1,520 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Head -->
+<head>
+<title>Seguridad servidores - El Ágora</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<!-- Body -->
+<body>
+
+<!-- HEADER: NAVBAR -->
+<header>
+  <div class="navbar-secundaria">
+    <a href="../index.html">Ágora</a>
+  </div>
+</header>
+
+
+<!-- Three -->
+<section class="scripts">
+  <header>
+  <h1>Apuntes de seguridad para servidores</h1>
+    <p>por <i>Diógenes</i> | versión actual: 2020-10-17</p>
+    <!-- <p>Somos una red de sistemas nerviosos distribuidos alrededor del globo</p> -->
+    </header>
+
+   <hr>
+
+  <h3>Índice</h3>
+  <ul>
+    <li><a href="#ref1">Parte I:</a> Al instalar el sistema</li>
+    <li><a href="#ref2">Parte II:</a> Al iniciar el sistema</li>
+    <li><a href="#ref3">Parte III:</a> Al conectar a internet</li>
+    <ul>
+      <li><a href="#ref3.1">1.</a> Endurecer /etc/sysctl.conf</li>
+      <li><a href="#ref3.2">2.</a> Conectar red cableada</li>
+      <li><a href="#ref3.3">3.</a> Software anti rootkits</li>
+      <li><a href="#ref3.4">4.</a> Firewall</li>
+      <li><a href="#ref3.5">5.</a> Fail2ban</li>
+      </ul>
+    <li><a href="#ref4">Parte IV:</a> Endurecer ssh</li>
+    </ul>
+  <hr>
+
+  <h3>Consejos</h3>
+  Si tipeas los comandos, a la larga te los terminarás aprendiendo de memoria.
+  <hr>
+
+
+  <h3><a name="ref1">Al instalar el sistema</a></h3>
+  <h4>1. Instalar security updates</h4>
+  Si no se eligió durante la instalacion, ejecutar:
+  <div class="comando">
+    apt install unattended-upgrades<br>
+    dpkg-reconfigure unattended-upgrades
+    </div><br>
+
+  <h4>2. Agregar usuarios al grupo admin y bloquear root</h4>
+  Ver usuarios en el sistema:
+  <div class="comando">
+    cat /etc/passwd
+    </div><br>
+
+  Ver grupos en mi sistema:
+  <div class="comando">
+    cat /etc/group
+    </div><br>
+
+  Añadir usuario:
+  <div class="comando">
+    useradd nombredeusuario
+    </div><br>
+
+  Añadir usuario a grupo admin y login para verificar sudo:
+  <div class="comando">
+   usermod -aG sudo nombredeusuario<br>
+   su - nombredeusuario
+   </div><br>
+
+  Añadir usuarios (¡el grupo debe existir!):
+  <div class="comando">
+   useradd nuevousuario -g nombregrupo
+   </div><br>
+
+  Más opciones sobre usuarios:
+  <div class="comando">
+   usermod
+   </div><br>
+
+  Mostrar grupo al cual pertenece un usuario:
+  <div class="comando">
+   groups nombredeusuario
+   </div><br>
+
+  Desactivar cuenta root<br>
+  Estando seguros que la nuevas cuentas tienen privilegios sudo, es conveniente bloquear la cuenta root.<br>
+  La cuenta root puede bloquearse con
+  <div class="comando">
+   passwd -l root
+    </div><br>
+  
+  y volver a actualizar con
+  <div class="comando">
+   passwd root
+    </div><br>
+
+  <h4>3. Limitar acceso a sudo:</h4>
+  Dejarlo solo para usuarios del grupo admin [especificar cómo]. Intentos fallidos quedan en:
+  <div class="comando">
+   var/mail/root
+   </div><br>
+
+  <hr>
+
+  <h3><a name="ref2">Al iniciar el sistema</a></h3>
+  <h4>Matar usuarios no autorizados.</h4>
+  In a nutshell: "w" y "last".
+
+  Elistar usuarios. Campo "WHAT" indica que procesos ha iniciado el usuario:
+  <div class="comando">
+   w
+   </div><br>
+
+  Bloquear cuentas sospechosas:
+  <div class="comando">
+   passwd -l username
+   </div><br>
+    
+  Usar mismo comando para bloquear cuentas duplicadas en /etc/passwd que tengan el mismo UID (A veces usan UID=0, igual que cuenta root). Ser cuidadoso de no destruir evidencia que implique al intruso.
+
+  Mostrar ultimos login (muestras "/var/log/wtmp")
+  <div class="comando">
+   last
+   </div><br>
+
+
+  <h4>Identificar y matar procesos no autorizados</h4>
+
+
+  <h4>Mirar archivos log para ver intentos de intrusos.</h4>
+  Mirar por "fail" y "repeat" en /var/los/messages
+  <div class="comando">
+ cat /var/log/messages<br>
+ grep fail /var/log/messages<br>
+ grep repeat /var/log/messages<br>
+  </div><br>
+
+
+  <h4>Analizar potenciales daños a archivos</h4>
+  Mirar archivos de configuración que han sido cambiados. Reinstalarlos de inmediato:
+  <div class="comando">
+   debsums -ce
+   </div><br>
+
+  o, usando find:
+    <div class="comando">
+     find . -maxdepth 1 -newermt "2020-04-01"
+     </div><br>
+
+  <h4>Revisar disponibilidad y estabilidad del sistema</h4>
+    Validar operacion del hardware
+      <div class="comando">
+	grep error /var/log/messages
+	</div><br>
+
+  <h4>Deshabilitar servicios innecesarios [especificar con comando service --status-all]</h4>
+  Enlistar todos los procesos con
+  <div class="comando">
+   service --status-all
+   </div><br>
+
+  Si no se puede desenchufar:
+  <div class="comando">
+   ifconfig interface down
+   </div><br>
+
+  Enlistar todos los runlevels:
+    <div class="comando">
+     ls /etc/rc*
+     </div><br>
+
+  Ver runlevels:
+  <div class="comando">
+    runlevel<br>
+    who -r
+    </div><br>
+
+<div class="texto">
+0: shutdown<br>
+1: Single user mode<br>
+2: Multiuser without network<br>
+3: Multiuser text based<br>
+4: Multiuser with X server (BDS)<br>
+5. Multiuser with X server (SUSE, Debian)<br>
+6. Reboot
+      </div><br>
+
+  Cambiar:
+  <div class="comando">
+    init newrunlevel
+    </div><br>
+
+  Ver el por defecto:
+  <div class="comando">
+    systemctl get-default
+    </div><br>
+
+  Ver todos los cargados:
+  <div class="comando">
+    systemctl list-units --type target --all
+    </div><br>
+
+  Dejar runlevel 3 por defecto:
+  <div class="comando">
+    systemctl set-dafault runlevel3.target
+    </div><br>
+
+  Mirar cambios en apt:
+  <div class="comando">
+    cat /var/log/apt/history.log
+    </div><br>
+
+  <hr>
+  
+  <h3><a href name="ref3">Conectar a internet</a></h3>
+  <h4><a name="ref3.1">1. Endurecer /etc/sysctl.conf.</a> Descomentar segun ejemplo y añadir lineas:</h4>
+  Proteger de "icmp echo" y requerimientos multicast
+  <div class="texto">
+    net.ipv4.icmp_echo_ignore_broadcasts = 1
+    </div><br>
+
+  Después de descomentar all.accept_source_route:
+  <div class="texto">
+    net.ipv4.conf.default.accept_source_route=0<br>
+    net.ipv6.conf.default.accept_source_route=0<br>
+    </div><br>
+  
+  Después de descomentar "syncookies" para bloquear ataques SYN:
+  <div class="texto">
+    net.ipv4.tcp_max_syn_backlog=2048<br>
+    net.ipv4.tcp_synack_retries=2<br>
+    net.ipv4.tcp_syn_retries=5<br>
+    </div><br>
+
+  Luego de descomentar martians:
+  <div class="texto">
+   net.ipv4.icmp_ignore_bogus_error_responses=1
+   </div><br>
+
+  Bannear requerimientos ping:
+  <div class="texto">
+   net.ipv4.icmp_echo_ignore_all=1
+   </div><br>
+
+  Aceptar cambios
+  <div class="comando">
+   sysctl -p
+   </div><br>
+
+  Añadirlos permanentemente:
+  <div class="comando">
+    sysctl -p /etc/sysctl.conf
+    </div><br>
+
+
+  <h4><a name="ref3.2">2. Conectar red cableada</a></h4>
+  Archivo de configuración en:
+  <div class="comando">
+   /etc/network/interfaces
+   </div><br>
+
+  Desde Ubuntu Server 17.04 [checkear version]:
+  <div class="comando">
+   nano /etc/netplan/00-installer-config.yaml
+   </div><br>
+
+  Ver dispositivos
+  <div class="comando">
+   ip addr
+   </div><br>
+
+  Levantar interface:
+  <div class="comando">
+   ip link set eth0 up
+   </div><br>
+
+  Reiniciar
+  <div class="comando">
+   systemctl restart networking
+   </div><br>
+
+  Ver estado
+  <div class="comando">
+   systemctl status networking.service
+   </div><br>
+
+  Configuración simple de /etc/network/interfaces:
+  <div class="texto">
+   man interfaces<br>
+   auto eth0<br>
+   allow-hotplug eth0<br>
+   iface eth0 inet dhcp
+   </div><br>
+
+  Configuración simple de /etc/netplan/00-installer-config.yaml para IP estática en 192.168.0.100:
+  <div class="texto">
+  network:<br>
+  version: 2<br>
+  renderer: networkd<br>
+  ethernets:<br>
+  &nbsp;enp6s0:<br>
+  &nbsp;&nbsp;dhcp4: no<br>
+  &nbsp;&nbsp;dhcp6: no<br>
+  &nbsp;&nbsp;addresses: [192.168.0.100/24]<br>
+  &nbsp;&nbsp;gateway4: 192.168.0.1<br>
+  &nbsp;&nbsp;nameservers:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;addresses: [8.8.8.8,8.8.4.4]
+   </div><br>
+
+
+  <h4><a name="ref3.3">Antivirus (requiere paquetes para archivos comprimidos) y software para rootkits:</a></h4>
+  En Linux también hay virus, pero también los mejores antivirus.
+    <div class="comando">
+      apt install clamav clamav-daemon clamav-docs<br>
+      apt install arc arj bzip2 cabextract lzop nomarch p7zip pax tnef unrar-free unzip zoo<br>
+      apt install chkrootkit rkhunter<br>
+      chkrootkit<br>
+      rkhunter --update<br>
+      rkhunter --propupd<br>
+      rkhunter --check
+      </div><br>
+
+  Si presenta problemas al actualizar, basta modificar los parámetros siguientes en el fichero /etc/rkhunter.cfg:
+    <div class="texto">
+      UPDATE_MIRRORS=0<br>
+      MIRRORS_MODE=1<br>
+      WEB_CMD=“/bin/false”
+      </div><br>
+      
+  con los siguientes valores:
+  <div class="texto">
+    UPDATE_MIRRORS=1<br>
+    MIRRORS_MODE=0<br>
+    WEB_CMD=“”<br>
+    </div><br>
+
+
+  <h4><a name="ref3.4">4. Firewall</a></h4>
+  <div class="comando">
+    ufw enable<br>
+    ufw status verbose<br>
+    ufw status numbered<br>
+    ufw allow 80/tcp
+    </div><br>
+
+  <h4><a name="ref3.5">5. Fail2ban</a></h4>
+  <div class="comando">
+    apt install fail2ban<br>
+    fail2ban-client status<br>
+    cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local<br>
+    nano /etc/fail2ban/jail.local<br>
+    </div><br>
+
+
+/etc/fail2ban/fail2ban.conf: This is the configuration file for the operational settings of the Fail2Ban daemon. Settings like loglevel, log file, socket and pid file is defined here.<br><br>
+
+/etc/fail2ban/jail.conf: This is where all the magic happens. This is the file where you can configure things like default ban time, number of reties before banning an IP, whitelisting IPs, mail sending information etc. Basically you control the behavior of Fail2Ban from this file.<br>
+
+    <div class="comando">
+    cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local<br>
+    cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+    </div><br>
+
+    El archivo contiene:
+
+    <div class="texto">
+    bantime: Set the length of the ban. Default is 10 minutes.<br><br>
+    
+    findtime: The window in which the action on an IP will be taken. Default is 10 minutes. Suppose a bad login was attempted by a certain IP at 10:30. If the same IP reaches the maximum number of retries before 10:40, it will be banned. Otherwise, the next failed attempt after 10:40 will be counted as first failed attempt.<br><br>
+    
+    maxretry: The number of failed retries before an action is taken<br><br>
+    
+    usedns: The “warn” setting attempts to use reverse-DNS to look up the hostname and ban it using hostname. Setting it to no will ban IPs, not hostname.<br><br>
+    
+    destemail: The email address to which the alerts will be sent (needs to be configured)<br><br>
+    
+    sender: The sender name in the notification email<br><br>
+    
+    mta: Mail Transfer Agent used for notification email<br><br>
+    
+    banaction: This parameter uses the /etc/fail2ban/action.d/iptables-multiport.conf file to set the action after maximum failed retries<br><br>
+    
+    protocol: The type of traffic that will be dropped after the ban
+    </div><br>
+    
+    
+  <div class="comando">
+    fail2ban-client restart
+    </div><br>
+
+  o de un servicio específico:
+
+  <div class="comando">
+    fail2ban-client status sshd<br>
+    </div><br>
+
+  Para http y https
+  <div class="texto">  
+    [apache]<br>
+enabled  = true<br>
+port     = http,https<br>
+filter   = apache-auth<br>
+logpath  = /var/log/apache2/*error.log<br>
+maxretry = 3<br>
+findtime = 600<br>
+ignoreip = 192.168.1.227<br><br>
+ 
+[apache-noscript]<br>
+enabled  = true<br>
+port     = http,https<br>
+filter   = apache-noscript<br>
+logpath  = /var/log/apache2/*error.log<br>
+maxretry = 3<br>
+findtime = 600<br>
+ignoreip = 192.168.1.227<br><br>
+ 
+[apache-overflows]<br>
+enabled  = true<br>
+port     = http,https<br>
+filter   = apache-overflows<br>
+logpath  = /var/log/apache2/*error.log<br>
+maxretry = 2<br>
+findtime = 600<br>
+ignoreip = 192.168.1.227<br><br>
+ 
+[apache-badbots]<br>
+enabled  = true<br>
+port     = http,https<br>
+filter   = apache-badbots<br>
+logpath  = /var/log/apache2/*error.log<br>
+maxretry = 2<br>
+findtime = 600<br>
+ignoreip = 192.168.1.227<br><br>
+    </div><br>  
+  
+  Para bannear y desbanner una IP:
+  <div class="comando">
+    fail2ban-client set apache banip 192.168.1.20<br>
+    fail2ban-client set apache unbanip 192.168.1.20
+    </div><br>
+
+
+  <hr>
+
+  <h3><a name="ref4">Endurecer ssh</a></h3>
+
+  Certificado CA:<br>
+  First, copy your certificate files to the directory where you keep your certificate and key files. Typically, this directory is /etc/ssl/ for your certificate.crt and ca_bundle.crt files, and /etc/ssl/private/ for your private.key file.<br><br>
+  
+  Luego, en /etc/apache2/sites-enabled/your_site_name:
+  
+  <div class="texto">
+  &lt;VirtualHost *:443&gt;<br>
+  &nbsp;DocumentRoot /var/www/site<br>
+  &nbsp;ServerName www.domain.com<br>
+  &nbsp;SSLEngine on<br>
+  &nbsp;SSLCertificateFile /path/to/certificate.crt<br>
+  &nbsp;SSLCertificateKeyFile /path/to/private.key<br>
+  &nbsp;SSLCertificateChainFile /path/to/ca_bundle.crt<br>
+  &lt;/VirtualHost&gt;
+  </div><br>
+
+
+  <hr>
+    
+  <h3><a name="ref5">Listar discos</a></h3>
+  <div class="comando">
+    lscpu
+    </div><br>
+
+  
+</section>
+
+
+<!-- FOOTER -->
+<footer class="main-footer">
+<div align="center">
+  <hr>
+  <h3>Contáctanos en<br>
+  <a href="mailto:agora@protonmail.com" style="color:red;">este correo</a></h3>
+
+
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/CyberPunkLabs" class="fa fa-github"></a>
+
+
+
+<h4>¡No requiere estudios ni experiencia previa!</h4>
+<h5>Hosted by a CyberPunk Lab*</h5>
+<p>*Los servidores de los CyberPunk Labs son de propiedad de todxs quienes los utilizan.<br />Revisa nuestra <a href="../filosofia.html" style="color:red"> filosofía política, sistema de propiedad comunitario y licencia Copyleft</a>.<br /><br />
+
+
+<div class="copyright">
+Diseño: <a href="unete.html" style="color:green;">Maldito Beto - Chaka Art.</a> 
+</div>
+
+</div>
+</footer>
+
+
+</body>
+</html>
