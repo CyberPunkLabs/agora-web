@@ -2,10 +2,14 @@
 html, body, #map {
     height: 100vh;
     width: 100vw;
-}
+    font-family: Courier, Courier New;
+/*    font-family: Songti SC;
+    font-family: monospace; 
+    font: Inconsolata, monospace; */
+    font-size: 14px;    
+    background-color: black; /* #282828;*/
 
-
-/* BODY */
+/* BODY 
 body, html {
   height: 100%;
   margin: 0;
@@ -13,7 +17,18 @@ body, html {
   font-size: 14px;
   font-family: monospace;
 }
+*/
+}
 
+/*
+.mono:lang(en-us), .mono {
+    font-family: Courier, Courier New;
+}
+
+:lang(zh-Hans) {
+    font-family: Songti SC;
+}
+*/
 
 @viewport {
   width: device-width ;
@@ -24,7 +39,7 @@ body, html {
 /* NAVBAR */
 .navbar-secundaria {
   overflow: hidden;
-  background-color: #333; 
+  background-color: black; 
   width: 100%;
   /* position: fixed; */
   /* height: 110px; */
@@ -79,14 +94,22 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
+  color: #66FF66;
+  text-shadow: 0 0 10px #33FF33;  
 }
 
+.hero-text a {
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;    
+
+}
 
 .hero-text button {
-  background-color: white;
-  box-shadow: inset 0 0 0 2px #CC0000;
-  color: black;
+    background-color: black; /*#282828;*/
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;    
+
+    box-shadow: inset 0 0 0 2px  #33FF33; /*  #CC0000;*/
   border-radius: 300px;
   border: 0;
   cursor: pointer;
@@ -117,7 +140,7 @@ body, html {
   margin: 0;
   padding: 0px 0px 0px 5px;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
   top: 0;
 }
 
@@ -133,15 +156,19 @@ body, html {
 
 /* media-menu links */
 .media-menu li a {
-  display: block;
-  color: white;
+   color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;
+
+    display: block;
+
   text-align: center;
   text-decoration: none;
 }
 
 /* media-menu colors */
 .media-menu li a:hover {
-  color:  rgb(0,255,51);
+  color: white;
+
 }
 
 
@@ -151,7 +178,12 @@ body, html {
     text-align: left;
     /*padding: 1em 0.5em 0em 0.5em;*/
     width: 85%;
-    margin: 0 auto;    
+    margin: 0 auto;
+    
+    background-color: black; /* #282828;*/
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;
+    
 }
 
 .seccion-principal h2 {
@@ -163,14 +195,18 @@ body, html {
 
 /* Formato de los links */
 .seccion-principal a {
-    color:  black;
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;
+
     /*margin: auto;*/
     text-decoration: none;    
 }
 
 .seccion-principal a:visited {
   text-decoration: none;    
-  color: black;
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;
+
 }
 
 
@@ -188,8 +224,6 @@ body, html {
 
 .center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   height: 170px;
   width: 200px;
 }
@@ -215,9 +249,13 @@ stack on top of each other instead of next to each other */
 
 /* FOOTER */
 .index-footer {
-  padding: 1em 0 2em 0;
-  background-color: rgb(40,40,40);
-  color: rgb(0,255,51);
+  color: #66FF66;
+  text-shadow: 0 0 10px #33FF33;  
+
+
+    padding: 1em 0 2em 0;
+  background-color: black; /*rgb(40,40,40);
+  color: rgb(0,255,51); */
   width: 100%;
 }
 
@@ -228,7 +266,9 @@ stack on top of each other instead of next to each other */
 */
 
 .index-footer a {
-    color: rgb(0,255,51);
+  color: #66FF66;
+  text-shadow: 0 0 10px #33FF33;  
+
     margin: auto;
 }
 
@@ -286,7 +326,7 @@ stack on top of each other instead of next to each other */
   float: left;
   width: 24%;
   padding: 0px 0px 0px 0px;
-  text-align: center;
+  text-align: left;
   /*height: 300px; 
   margin: 10px;*/
 }
@@ -306,13 +346,13 @@ stack on top of each other instead of next to each other */
 }
 
 
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+
 
 /* Responsive layout - makes the three columns
 stack on top of each other instead of next to each other */
