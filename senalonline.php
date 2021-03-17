@@ -10,17 +10,40 @@
   
 <style>
 
-#player
-{
-    background-color: transparent; /*#084B8A;*/
-    /*background-image: url("../images/banner_test4.png") */
-  width:400px;
-  margin-left:3px;
-  padding:1px;
-  box-sizing:border-box;
-}
+  html, body {
+    background-color: black; /*#084B8A;*/
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;  
+  }
+
+
+  .main-section li a {
+    background-color: black; /*#084B8A;*/
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;  
+  }
+
+  .main-section li a:visited {
+    background-color: black; /*#084B8A;*/
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;  
+  }
+  
+  
+  #player {
+      background-color: black; /*#084B8A;*/
+      color: #66FF66;
+      text-shadow: 0 0 10px #33FF33;  
       
-  </style>
+      /*background-image: url("../images/banner_test4.png") */
+      width:400px;
+      margin-left:3px;
+      padding:1px;
+      box-sizing:border-box;
+  }
+
+  
+</style>
 </head>
 
 
@@ -29,7 +52,7 @@
 <body>
 
 <!-- Early Jazz Player -->
-<section> <!-- class="earlyjazzplayer"> -->
+<section class="main-section"> <!-- class="earlyjazzplayer"> -->
 
   <h1 style="font-size:16px;"><b>The Early Jazz Radio - Señal online</b></h1>
 
@@ -50,18 +73,18 @@
   
   <!-- El player -->
   <div id="wrapper">
-  <div id='player'>
+    <div id='player'>
 
-  <audio id="audioPlayer" controls autoplay="autoplay">
-    <source src=<?php echo "EJR/".$file?> type="audio/mp3">
+      <audio id="audioPlayer" controls autoplay="autoplay">
+	<source src=<?php echo "EJR/".$file?> type="audio/mp3">
 
-    Your browser does not support the audio element.
-  </audio>
+	  Your browser does not support the audio element.
+      </audio>
 
-  </div>
+    </div>
   </div>
     
-   <p><b>Artista:</b><br>
+  <p><b>Artista:</b><br>
     <?php echo $displayname?><br>
     <a href="" style="text-decoration:none;" onclick="nextSong()">-> Siguiente</a><p>
 </section>
