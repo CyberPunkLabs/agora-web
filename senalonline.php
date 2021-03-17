@@ -25,21 +25,31 @@
       }
       
       
-      .col-25 {
+      .col1 {
 	  float: left;
 	  width: 70px;
 	  margin-top: 6px;
       }
       
-      .col-75 {
+      .col2 {
 	  float: left;
-	  margin-left: 10px;
+	  width: 200px
+      }
+
+      .col3 {
+	  width: 250px;
+	  float: left;
       }
 
       .column-all {
 	  width: 100%;
 	  float: left;
-	  margin-left: 2px;
+      }
+
+
+      .box {
+	  padding-left: 10px;
+	  border-left: 1px dashed;
       }
       
     </style>
@@ -62,30 +72,38 @@
 	 $displayname = $item[0]." ".$item[1];
 	 ?>
 
-	<!-- El player -->
+	<!-- Fila principal -->
 	<div class="row">
-	  <div class="col-25">
+	  <!-- Columna 1 -->
+	  <div class="col1">
 	    <audio id="myAudio">
 	      <source src=<?php echo "EJR/".$file?> type="audio/mp3">
 		Your browser does not support the audio element.
 	    </audio>
 	    <button onclick="playAudio()" type="button" id="audioButton"><img src="images/play1.png" width="50" height="50"/></button>
 	  </div>
-	  
-	  <div class="col-75">
+
+	  <!-- Columna 2 -->
+	  <div class="col2">
 	    <p><b>Sonando</b><br>
 	      <?php echo $displayname?></p> 
 	  </div>
-	</div>
-	      
-    	<div class="row">
-	  <div class="column-all">
-	    <p>Laboratorios Ciberpunk<br>
-	    Contáctanos en el inframundo</p>
-	  </div>
-	  
-	</div>
 
+	  <!-- Columna 3 -->
+	  <div class="col3">
+	    <div class="box">
+	      <p>Anuncios<br>
+		Los laboratorios Ciberpunk haran un curso de seguridad digital doméstica. Contáctanos.</p>
+	    </div>
+	  </div> <!-- Cierre columna 3 -->
+	</div> <!-- Cierre fila principal -->
+
+	<!-- Columna institucion -->
+	<div class="row">
+	  <div class="column-all">
+	    Laboratorios Ciberpunk
+	  </div>
+	</div>
 
     </section>    
 
@@ -111,40 +129,3 @@
 </html>
 
 
-  <!--
-<style>
-
-  html, body {
-    background-color: black; /*#084B8A;*/
-    color: #66FF66;
-    text-shadow: 0 0 10px #33FF33;  
-  }
-
-/*
-  .main-section li a {
-    background-color: black; /*#084B8A;*/
-    color: #66FF66;
-    text-shadow: 0 0 10px #33FF33;  
-  }
-
-  .main-section li a:visited {
-    background-color: black; /*#084B8A;*/
-    color: #66FF66;
-    text-shadow: 0 0 10px #33FF33;  
-  }
-  
-  
-  #player {
-      background-color: black; /*#084B8A;*/
-      color: #66FF66;
-      text-shadow: 0 0 10px #33FF33;  
-      
-      /*background-image: url("../images/banner_test4.png") */
-      width:400px;
-      margin-left:3px;
-      padding:1px;
-      box-sizing:border-box;
-  }
-
-  
-</style> -->
