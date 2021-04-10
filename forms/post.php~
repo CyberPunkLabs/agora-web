@@ -1,0 +1,40 @@
+<?php
+
+$servername = "localhost";
+$database = "municiberpunk";
+$username = "root";
+$password = "r3volucion2021Server!!";
+
+$rut = $_REQUEST['rut'];
+$titulo = $_REQUEST['titulo'];
+$categoria = $_REQUEST['categoria'];
+$descripcion = $_REQUEST['descripcion'];
+$latlng = $_REQUEST['latlng'];
+$participar = $_REQUEST['participar'];
+
+if($usuario === '' ) {
+    echo json_encode('Llena todos los campos');
+    } else {
+        echo json_encode(" Nombre: ".$rut." Categoria: ".$categoria." Descripcion ".$descripcion);
+}
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+// Check connection
+if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "INSERT INTO mapa (rut,titulo,categoria,descripcion,latlng,participar) VALUES ('$rut','$titulo','$categoria','$descripcion','$latlng','$participar')";
+
+if (mysqli_query($conn, $sql)) {
+     echo 'Operación exitosa!!';
+} else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);
+
+
+?>
+

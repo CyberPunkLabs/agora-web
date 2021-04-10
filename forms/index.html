@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+    <meta charset="utf-8"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+
+    <h2>Responsive Form</h2>
+    <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+    
+    <div class="container">
+      <form action="post.php">
+	
+	<div class="row">
+	  <div class="col-25">
+            <label for="name">Nombre</label>
+	  </div>
+	  <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="Nombres y apellidos">
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-25">
+            <label for="run">RUN</label>
+	  </div>
+	  <div class="col-75">
+            <input type="text" id="run" name="run" placeholder="Tu RUN">
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-25">
+            <label for="genero">Género</label>
+	  </div>
+	  <div class="col-75">
+            <select id="genero" name="genero">
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="ninguno">No especificar</option>
+            </select>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-25">
+            <label for="correo">Email</label>
+	  </div>
+	  <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Email">
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-25">
+            <label for="region">Región</label>
+	  </div>
+	  <div class="col-75">
+            <input type="text" id="region" name="region" placeholder="Región">
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-25">
+            <label for="comuna">Comuna</label>
+	  </div>
+	  <div class="col-75">
+            <input type="text" id="comuna" name="comuna" placeholder="Comuna">
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <h3>Observaciones</h3>
+
+	  <ol>
+	    <li>
+	  Se le indica al titular que la medida MM-MH-02: Mesa de Trabajo Comunitario, ofrecida sobre la afectación al Medio Humano, no constituye mitigación porque una mesa de trabajo tiene un resultado incierto, y una mitigación debe ser un conducta comprometida, cierta y determinada. 
+
+	  <br>Incluir:
+	  <input type="radio" id="1" name="1" value="si" checked="checked">
+	  <label for="1">Sí</label>
+	  <input type="radio" id="1" name="1" value="no">
+	  <label for="1">No</label>
+	    </li><hr>
+
+	    <li>
+	  Se le indica al titular que la medida MM-MH-02: Mesa de Trabajo Comunitario, ofrecida sobre la afectación al Medio Humano, no constituye mitigación porque una mesa de trabajo tiene un resultado incierto, y una mitigación debe ser un conducta comprometida, cierta y determinada. 
+
+	  <br>Incluir:
+	  <input type="radio" id="2" name="2" value="si" checked="checked">
+	  <label for="2">Sí</label>
+	  <input type="radio" id="2" name="2" value="no">
+	  <label for="1">No</label>
+	    </li><hr>
+
+
+	    
+	    </ol>
+
+
+
+	  
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	  
+	</div>
+
+	
+<!--
+	<div class="row">
+	  <div class="col-25">
+            <label for="subject">Subject</label>
+	  </div>
+	  <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	  </div>
+	</div>
+-->
+	
+	<div class="row">
+	  <input type="submit" value="¡Enviar!">
+	</div>
+	
+      </form>
+    </div>
+    
+  </body>
+</html>

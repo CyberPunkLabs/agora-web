@@ -23,8 +23,7 @@
 	  text-decoration: none; 
 
       }
-      
-      
+            
       .col1 {
 	  float: left;
 	  width: 70px;
@@ -36,16 +35,20 @@
 	  width: 200px
       }
 
+      .col2 p {
+	  margin-bottom: 1px;
+      }
+      
       .col3 {
 	  width: 250px;
 	  float: left;
       }
 
       .column-all {
+	  margin-top: 15px;
 	  width: 100%;
 	  float: left;
       }
-
 
       .box {
 	  padding-left: 10px;
@@ -85,23 +88,16 @@
 
 	  <!-- Columna 2 -->
 	  <div class="col2">
-	    <p><b>Sonando</b><br>
-	      <?php echo $displayname?></p> 
+	    <p id="estado"><b>Sonando</b></p>
+	      <?php echo $displayname?>
 	  </div>
-
-	  <!-- Columna 3 -->
-	  <div class="col3">
-	    <div class="box">
-	      <p>Anuncios<br>
-		Los laboratorios Ciberpunk haran un curso de seguridad digital doméstica. Contáctanos.</p>
-	    </div>
-	  </div> <!-- Cierre columna 3 -->
 	</div> <!-- Cierre fila principal -->
-
+	  
 	<!-- Columna institucion -->
 	<div class="row">
 	  <div class="column-all">
-	    Laboratorios Ciberpunk
+	    Laboratorios Ciberpunk<br>
+	    Una red de sistemas nerviosos orgánicamente interconectados
 	  </div>
 	</div>
 
@@ -112,14 +108,17 @@
     <script>
       var x = document.getElementById("myAudio");
       var audioButton = document.getElementById("audioButton")
+      var estado = document.getElementById("estado")
       function playAudio() { 
 	  x.play();
+	  estado.innerHTML = "<b>Sonando</b>";
 	  audioButton.innerHTML = "<img src='images/pause1.png' width='50' height='50'/>";
 	  audioButton.onclick = pauseAudio;
       } 
       
       function pauseAudio() { 
-	  x.pause(); 
+	  x.pause();
+	  estado.innerHTML = "<b>Pausado</b>";	  
 	  audioButton.innerHTML = "<img src='images/play1.png' width='50' height='50'/>";
 	  audioButton.onclick = playAudio;
       } 

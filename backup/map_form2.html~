@@ -1,0 +1,35 @@
+<!--
+
+<!DOCTYPE HTML>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8"/>
+    <script src="assets/js/main.js"></script>
+  </head>
+
+  <body> -->
+    <form name="form" id="formulario">
+    <script src="assets/js/main.js"></script>      
+      <input type="text" name="titulo" placeholder="Titulo">
+      <input list="flavors" id="choice" name="categoria" placeholder="Categoria"/>
+      <datalist id="flavors">
+	<option value="Democracia y ciudadanía">
+	<option value="Ecología y protección ambiental">
+	<option value="Educación">
+	<option value="Salud">
+	<option value="Justicia Social y Solidaridad">
+	<option value="Economía Local y Creativa">
+	<option value="Ciudada a Escala Humana y Sustentable">
+	<option value="Cultura">
+	<option value="Otro">
+      </datalist>
+      <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion"><br><br> 
+      <input type="submit" onclick="connect()" value="Guardar">	
+    </form>
+<!--    <script src="test.js"></script> -->
+
+   <!--
+  </body>
+</html>
+-->
