@@ -14,18 +14,17 @@
     <section class="my-map">
       <div id="map"></div> 
     </section>
-    
-    
+        
     <script>
       var cruzIcon = L.icon({
-	  iconUrl: 'cruz-roja.png',
+	  iconUrl: 'assets/imagenes/cruz-roja.png',
 	  iconSize:     [30, 30], // size of the icon
 	  iconAnchor:   [19, 0], // point of the icon which will correspond to marker's location
 	  popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
       });
       
       var lechugaIcon = L.icon({
-	  iconUrl: 'lechuga.png',
+	  iconUrl: 'assets/imagenes/lechuga.png',
 	  iconSize:     [30, 40], // size of the icon
 	  iconAnchor:   [19, 0], // point of the icon which will correspond to marker's location
 	  popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
@@ -41,6 +40,8 @@
       // Nn
       L.marker([-33.1881735132313,-70.6607013372956], {icon: cruzIcon}).bindPopup('<b>NN</b><br>Abate Juan Ignacio Molina 2010<br>tel: NN').addTo(farmacias);
       ////
+
+
       
       var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 	  '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -85,18 +86,29 @@
       }
       
       map.on('locationerror', onLocationError);
-      
-      
-      var button = new L.Control.Button('<p>¡Inscríbete aquí!</p>');
-      button.addTo(map);
-      button.on('click', function () {
-	  window.open("https://forms.gle/YJbqoNZ1znZxdn2s6","_self");
-      });
-      
-      
-    </script>
+
+
+    function onMapClick(e) {
+	//marker = L.marker(e.latlng, {draggable: true}).addTo(mymap);
+	marker = L.marker(e.latlng).addTo(map);	
+	marker.bindPopup("Holi", {closeButton: false, closeOnClick: false, keepInView: true}).openPopup();
+
+	//LATLNG = e.latlng.toString(); //marker.getLatLng();
+	//console.log("latlng: " + LATLNG)
+	//console.log("type latlng: " + typeof LATLNG)	
+    }
     
-    
+    map.on('dblclick', onMapClick);  
+
+function deleteMarker() {
+    map.removeLayer(marker);
+}
+
+
+
+
+
+      </script>
     
   </body>
 </html>

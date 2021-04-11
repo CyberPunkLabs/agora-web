@@ -66,7 +66,7 @@ body, html {
 
 /* BANNER */
 .hero-image {
-  background-image: url("../images/banner_test4.png");
+  background-image: url("../images/banner.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,19 +80,35 @@ body, html {
 
 /* BANNER */
 .hero-image2 {
-  background-image: url("../images/banner_test4.png");
+  background-image: url("../images/subbanner_test.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
-/*  padding: 10em 0em 10em 0em*/
+  padding: 10em 0em 5em 0em
   
 }
 
 .hero-text2 {
   text-align: center;
-  color: black;
+  color: #66FF66;
+  text-shadow: 0 0 10px #33FF33;  
+}
+
+.hero-text2 a {
+    text-decoration: none;
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;  
+
+}
+
+
+#mapid {
+  display: block;
+  height: 130px;
+  width: 160px;
+
 }
 
 

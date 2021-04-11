@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="assets/leaflet/leaflet.css"/>
+    <script src="assets/leaflet/leaflet.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/mapa.js"></script>
 </head>
 
 
@@ -22,7 +27,7 @@
   </div>
 </div>
 
-
+<script src="assets/js/mapa.js"></script>
 <!-- MENU INVESTIGACION -->
 <section>
 <div>
@@ -49,12 +54,12 @@
 </div>
 
 
-<!-- BANNER PRINCIPAL -->
+<!-- BANNER SECUNDARIO -->
 <div class="hero-image2">
   <div class="hero-text2">
-    <h2 style="font-size:60px">Destacamos</h2>
-    <p style="font-size:40px"><a href="">Título destacado</a></p>
-    <p>Descripción destacado</p>
+    <h3 style="font-size:40px;">Destacados</h3>
+    <p style="font-size:40px;font-color=green;"><a href="">Redes de economía local</a></p>
+    <p style="font-size:15px">Redes geolocalizadas de producción local<br>(farmacias no coludidas, pequeños y medianos productores, monedas sociales, hacklabs, y más).<br>Construcción colaborativa. Inscribe la tuya.</p>
   </div>
 </div>
 
@@ -72,13 +77,12 @@
   <!-- Red de economia local -->
   <div class="column"> <!--style="background-color:#aaa;" -->
     <a href="productores/productores.html">    
-    <h3>Red de economía local</h3>
+    <h3>Redes de economía local</h3></a>
     <img src="images/productores.png" alt="Girl in a jacket" class="center"> 
-    <p>Redes geolocalizadas de producción local (farmacias no coludidas, pequeños y medianos productores, monedas sociales, hacklabs, y más). Construcción colaborativa. Inscribe la tuya.</p>
-    </a>
+    <a href="redeseconomialocal.html"><p>Redes geolocalizadas de producción local (farmacias no coludidas, pequeños y medianos productores, monedas sociales, hacklabs, y más). Construcción colaborativa. Inscribe la tuya.</p></a>
   </div>
     
-  <!-- Tutoriales -->
+  <!-- Escuelas ciberpunk -->
   <div class="column">
     <a href="tutoriales.html">    
     <h3>Escuelas Ciberpunk</h3>
@@ -87,14 +91,15 @@
     </a>
   </div>
 
-  <!-- Tutoriales -->
+  <!-- Señal online -->
   <div class="column">
-    <a href="tutoriales.html">    
-    <h3>Tutoriales</h3>
-    <img src="images/tutoriales.png" alt="Girl in a jacket" class="center">         
-    <p>Repositorio comunitario de tutoriales, desde ciberseguridad, cocina y programación, hasta construir aparatos o analizar datos de Ciencias Sociales.</p>
-    </a>
+  <a href="" onclick="window.open('senalonline.php', '','width=450px,height=200px')"> 
+    <h3>Early jazz radio [Señal online]</h3>
+    <img src="images/thelonious.jpg" alt="Girl in a jacket" class="center">     
+	<p>Cintas inéditas de maestrxs primigenixs del jazz (Bird, Thelonious, Dizzie, Baker, entre otros), sonando 24/7. Recolpiladas, relatadas y donadas por David W. Nieven.</p>
+  </a>
   </div>
+
 </div>
 
 <!-- Segunda fila -->
@@ -108,25 +113,27 @@
     </a>
   </div>
 
-  <!-- Revista autogestionada -->
+  <!-- Diccionario Neolengua -->
   <div class="column">
-    <a href="revista.html">        
-    <h3>Accede a nuestros servidores</h3>
-    <img src="images/banner_test.png" alt="Girl in a jacket" class="center">         
-    <p>Puedes análizar datos, entrenar. [Abre javascript emulando terminal que solicita llenar formulario]</p>
+    <a href="diccionario-neolengua/inicio.html">    
+    <h3><i>I Diccionario de Neolengua Española</i></h3>
+    <img src="images/diccionario.png" alt="Girl in a jacket" class="center">         
+    <p>Una comunidad secreta desarrolla una Wiki con el <i>I Diccionario de Neolengua Española</i>. Su meta es tener una lengua castellana libre de fascimo de aquí a 2030. Únete</p>
     </a>
   </div>
-  
-  <!-- CyberPunk Labs -->
-  <div class="column">
-    <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/YWKRfZFtcZ">    
-    <h3>Emprendimientos</h3>
-    <img src="images/arduino.png" alt="Girl in a jacket" class="center">     
-    <p>Emprende con nosotros a través de nuestra sociedad fantasma: Synaptech Ltda. Funcionamos como una cooperativa dinámica.</p>
-    </a>
-  </div>
-</div>
 
+  
+
+  <!-- Tutoriales -->
+  <div class="column">
+    <a href="tutoriales.html">    
+    <h3>Tutoriales</h3>
+    <img src="images/tutoriales.png" alt="Girl in a jacket" class="center">         
+    <p>Repositorio comunitario de tutoriales, desde ciberseguridad, cocina y programación, hasta construir aparatos o analizar datos de Ciencias Sociales.</p>
+    </a>
+  </div>
+
+ 
 
 <!-- Tercera fila -->
 <div class="row">
@@ -139,24 +146,28 @@
     </a>
   </div>
 
-  <!-- Señal online -->
-  <div class="column">
-  <a href="" onclick="window.open('senalonline.php', '','width=450px,height=200px')"> 
-    <h3>Early jazz radio [Señal online]</h3>
-    <img src="images/thelonious.jpg" alt="Girl in a jacket" class="center">     
-	<p>Cintas inéditas de maestrxs primigenixs del jazz (Bird, Thelonious, Dizzie, Baker, entre otros), sonando 24/7. Recolpiladas, relatadas y donadas por David W. Nieven.</p>
-  </a>
-  </div>
 
-
-  <!-- Diccionario Neolengua -->
+  <!-- Servidores -->
   <div class="column">
-    <a href="diccionario-neolengua/inicio.html">    
-    <h3><i>I Diccionario de Neolengua Española</i></h3>
-    <img src="images/diccionario.png" alt="Girl in a jacket" class="center">         
-    <p>Una comunidad secreta desarrolla una Wiki con el <i>I Diccionario de Neolengua Española</i>. Su meta es tener una lengua castellana libre de fascimo de aquí a 2030. Únete</p>
+    <a href="revista.html">        
+    <h3>Accede a nuestros servidores</h3>
+    <img src="images/servers.jpeg" alt="Girl in a jacket" class="center">         
+    <p>Puedes análizar datos, entrenar. [Abre javascript emulando terminal que solicita llenar formulario]</p>
     </a>
   </div>
+
+
+
+  <!-- CyberPunk Labs -->
+  <div class="column">
+    <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/YWKRfZFtcZ">    
+    <h3>Emprendimientos</h3>
+    <img src="images/arduino.png" alt="Girl in a jacket" class="center">     
+    <p>Emprende con nosotros a través de nuestra sociedad fantasma: Synaptech Ltda. Funcionamos como una cooperativa dinámica.</p>
+    </a>
+  </div>
+</div>
+
 </div>
 
 <br><br><br>
