@@ -86,21 +86,36 @@
       
       
       function onLocationError(e) {
-	  alert(e.message);
-	  L.marker([-35.03, -70.75]).addTo(map)
-              .bindPopup("<b>Bienvenido</b><br>Al lado puedes seleccionar rubros y redes de interés<br><br>Haz doble click en el mapa para agregar un punto nuevo.").openPopup();
+	  console.log("pass")
+	  //alert(e.message);
+	  //L.marker([-35.03, -70.75]).addTo(map)
+          //    .bindPopup("<b>Bienvenido</b><br>Al lado puedes seleccionar rubros y redes de interés<br><br>Haz doble click en el mapa para agregar un punto nuevo.").openPopup();
 	  
-	  L.circle([-35.03, -70.75], radius).addTo(map);
+	  //L.circle([-35.03, -70.75], radius).addTo(map);
       }
       
       map.on('locationerror', onLocationError);
 
       
-      for ( var i=0; i < mymarkers.length; ++i ) 
-      {
-	  L.marker( [mymarkers[i].lat, mymarkers[i].lng] )
+      for ( var i=0; i < mymarkers.length; ++i ) {
+
+	  switch(mymarkers[i].categoria) {
+	  case "cruzIcon":
+	      thisIcon = cruzIcon;
+	      categoria = farmacias;
+	      break;
+	  case "lechugaIcon":
+	      thisIcon = lechugaIcon;
+	      categoria = hortaliceres;
+	      break;
+	  default:
+	      thisIcon = lechugaIcon;
+	      categoria = hortaliceros;
+	  } 
+	  
+	  L.marker([mymarkers[i].lat, mymarkers[i].lng], {icon: thisIcon})
 	      .bindPopup('<b>' + mymarkers[i].nombre + '</b><br>' + mymarkers[i].direccion + '<br>' + mymarkers[i].tel)
-	      .addTo(map);
+	      .addTo(categoria);
       }
 
       

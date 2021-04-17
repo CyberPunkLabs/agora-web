@@ -62,17 +62,18 @@ html, body, #map {
     padding: 5em 0em 0em 0em
 }
 
+.hero-image2 a {
+    text-decoration: none;
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;  
+}
+
 .hero-text2 {
     text-align: center;
     color: #66FF66;
     text-shadow: 0 0 10px #33FF33;  
 }
 
-.hero-image2 a {
-    text-decoration: none;
-    color: #66FF66;
-    text-shadow: 0 0 10px #33FF33;  
-}
 
 #mapid {
     display: block;
@@ -136,6 +137,23 @@ html, body, #map {
     box-shadow: inset 0 0 0 2px #44CC00;
 }
 
+/* BANNER 2 */
+.hero-imagen-subpagina {
+    background-image: url("../images/subbanner_test.png");
+    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 0em 0em 0em 0em
+}
+
+.hero-imagen-subpagina a {
+    text-decoration: none;
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;  
+}
+
 
 /* MEDIA MENU */
 .media-menu {
@@ -178,16 +196,33 @@ html, body, #map {
     text-align: left;
     width: 80%;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 1em;
     background-color: black; /* #282828;*/
     color: #66FF66;
     text-shadow: 0 0 10px #33FF33;    
 }
 
 .seccion-principal h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-top: 0em;
+}
+
+.seccion-principal-subpaginas {
+    text-align: left;
+    width: 70%;
+    /*margin: 0 auto;*/
+    margin-left: 1em;
+    background-color: black; /* #282828;*/
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;    
+}
+
+.seccion-principal-subpaginas h2 {
     text-align: center;
     font-size: 48px;
 }
+
 
 /* Formato de los links */
 .seccion-principal a {

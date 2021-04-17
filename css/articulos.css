@@ -196,36 +196,27 @@ stack on top of each other instead of next to each other */
 
 
 
-
-
 /* FOOTER */
 .index-footer {
-  padding: 1em 0 2em 0;
-  background-color: rgb(40,40,40);
-  color: rgb(0,255,51);
-  width: 100%;
-  font-family: monospace;
-  font-size: 14px;
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;  
+    padding: 1em 0 2em 0;
+    background-color: black; /*rgb(40,40,40);
+			       color: rgb(0,255,51); */   
+    width: 100%;
 }
 
 .index-footer a {
-    color: rgb(0,255,51);
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;  
     margin: auto;
 }
 
-
 /* mouse over link */
 .index-footer a:hover {
-    color: white; /*hotpink;*/
+    color: white;
+    
 }
-
-
-/* selected link 
-.index-footer a:active {
-  color: blue;
-}
-*/
-
 
 .footer-column ul {
     list-style-type: none;
@@ -251,34 +242,103 @@ stack on top of each other instead of next to each other */
 
 /* Crea 4 equal columns that floats next to each other */
 .footer-column {
-  float: left;
-  width: 24%;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-  /*height: 300px; 
-  margin: 10px;*/
+    float: left;
+    width: 24%;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
 }
 
 .footer-column li {
-    padding: 0px 0px 12px 0px;
+    padding: 0px 0px 0.5em 0px;
 }
 
 .footer-column a {
-  text-decoration: none;    
-  /*color: black;*/
+    text-decoration: none;    
 }
 
 .footer-column a:visited {
   text-decoration: none;    
-  /*color: black;*/
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
+
+/* Responsive layout - makes the three columns
+   stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .footer-column {
+	width: 100%;
+    }
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 15px;
+    font-size: 50px;
+    width: 10px;
+    height: 8px;
+    font-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40%;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #833AB4;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+
+/* Github */
+.fa-github {
+    background: #211F1F;
+    color: white;
+} 
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333; 
+    width: 100%;
+    font-size: 14px;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 56px;
+    text-decoration: none;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #4CAF50;
+}
+
 
 /* Responsive layout - makes the three columns
 stack on top of each other instead of next to each other */
