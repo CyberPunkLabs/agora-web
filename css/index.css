@@ -1,5 +1,5 @@
 /* @charset "UTF-8"; */
-html, body, #map {
+html, body, #mapid {
     height: 100vh;
     width: 100vw;
     font-family: Courier, Courier New;
@@ -77,8 +77,8 @@ html, body, #map {
 
 #mapid {
     display: block;
-    height: 130px;
-    width: 160px;
+    height: 560px;
+    width: 860px;
     
 }
 
