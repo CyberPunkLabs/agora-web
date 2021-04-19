@@ -42,7 +42,7 @@ html, body, #mapid {
 
 /* BANNER */
 .hero-image {
-    background-image: url("../images/banner.png");
+    background-image: url("../imagenes/banner.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ html, body, #mapid {
 
 /* BANNER 2 */
 .hero-image2 {
-    background-image: url("../images/subbanner_test.png");
+    background-image: url("../imagenes/subbanner_test.png");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@ html, body, #mapid {
 
 @media screen and (max-width:600px) {
     .hero-image {
-	background-image: url("../images/banner_test5.png");
+	background-image: url("../imagenes/banner_test5.png");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -139,7 +139,7 @@ html, body, #mapid {
 
 /* BANNER 2 */
 .hero-imagen-subpagina {
-    background-image: url("../images/subbanner_test.png");
+    background-image: url("../imagenes/subbanner_test.png");
     height: 30%;
     background-position: center;
     background-repeat: no-repeat;

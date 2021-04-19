@@ -1,6 +1,6 @@
 // Crea iconos  
 var cruzIcon = L.icon({
-    iconUrl: 'assets/imagenes/cruz-roja.png',
+    iconUrl: 'imagenes/cruz-roja.png',
     iconSize:     [30, 30], // size of the icon
     iconAnchor:   [19, 0], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
@@ -22,6 +22,15 @@ var greenIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
+var blueIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
 var redIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -31,10 +40,54 @@ var redIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
+var goldIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-gold.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+var orangeIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+var yellowIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+var violetIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
 
 // Crea layers
-var hortaliceres = L.layerGroup();
+var almacenes = L.layerGroup();
+var abarrotes = L.layerGroup();
+var distribuidoras = L.layerGroup();
+var hortalizas = L.layerGroup();
 var farmacias = L.layerGroup();
+var panaderias = L.layerGroup();
+var cultura = L.layerGroup();
+var graneleros = L.layerGroup();
+var otro = L.layerGroup();
+
 
 //// BASE DATOS
 // Nn
@@ -54,19 +107,26 @@ var streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoom
 
 
 // CREA EL MAPA
-var map = L.map('map', {
+var map = L.map('mapid', {
     center: [-35.03, -70.75],
     zoom: 6,
-    layers: [streets, hortaliceres, farmacias]
+    layers: [streets,abarrotes,distribuidoras,hortalizas,almacenes,farmacias,panaderias,cultura,graneleros,otro]
 });
 
 var baseLayers = {
-    "Streets": streets
+    "Rutas": streets
 };
 
 var overlays = {
-    "Hortalizas": hortaliceres,
-    "Farmacias": farmacias
+    "Abarrotes y aseo": abarrotes,
+    "Distribuidoras": distribuidoras,
+    "Hortaliceros y huertas": hortalizas,
+    "Almacenes populares": almacenes,
+    "Farmacias": farmacias,
+    "Panaderías": panaderias,
+    "Educación y cultura": cultura,
+    "Camiones graneleros": graneleros,
+    "Otro": otro    
 };
 
 L.control.layers(baseLayers, overlays).addTo(map);
@@ -97,7 +157,7 @@ function onLocationError(e) {
 map.on('locationerror', onLocationError);
 
 
-for ( var i=0; i < mymarkers.length; ++i ) {
+for (var i=0; i < mymarkers.length; ++i) {
     
     switch(mymarkers[i].categoria) {
     case "cruzIcon":
@@ -106,18 +166,34 @@ for ( var i=0; i < mymarkers.length; ++i ) {
 	break;
     case "lechugaIcon":
 	thisIcon = greenIcon;
-	categoria = hortaliceres;
+	categoria = hortalizas;
 	break;
-    default:
-	thisIcon = lechugaIcon;
-	categoria = hortaliceros;
+    case "otro":
+	thisIcon = blueIcon;
+	categoria = otro;
+	break;
+    case "abarrotes":
+	thisIcon = yellowIcon;
+	categoria = hortalizas;
+	break;
+    case "distribuidoras":
+	thisIcon = orangeIcon;
+	categoria = distribuidoras;
+	break;
+    case "panaderias":
+	thisIcon = violetIcon;
+	categoria = panaderias;
+	break;
+ //   default:
+//	thisIcon = blueIcon;
+//	categoria = otro;
+//	break
 	  } 
     
     L.marker([mymarkers[i].lat, mymarkers[i].lng], {icon: thisIcon})
 	.bindPopup('<b>' + mymarkers[i].nombre + '</b><br>' + mymarkers[i].direccion + '<br>' + mymarkers[i].tel)
 	.addTo(categoria);
 }
-
 
 function onMapClick(e) {
     //marker = L.marker(e.latlng, {draggable: true}).addTo(mymap);

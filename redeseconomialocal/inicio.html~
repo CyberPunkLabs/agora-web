@@ -25,8 +25,8 @@
     
     
     <!-- <script type='text/javascript' src='assets/js/maps/markers.json'></script> -->
-    <script type='text/javascript' src='assets/js/maps/BBDD_EconomiaLocal.json'></script>          
-    <script type='text/javascript' src='assets/js/maps/redesEconomiaLocal.js'></script>
+    <script type='text/javascript' src='js/mapas/BBDD_EconomiaLocal.json'></script>          
+    <script type='text/javascript' src='js/mapas/redesEconomiaLocal.js'></script>
 
   </body>
 </html>

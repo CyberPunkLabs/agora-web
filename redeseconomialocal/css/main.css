@@ -1,0 +1,24 @@
+/* @charset "UTF-8"; */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #mapid {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+}
+
+/*
+@media screen and (max-width:600px) {
+    #mapid {
+	height: 100vw;
+    }
+}
+*/
