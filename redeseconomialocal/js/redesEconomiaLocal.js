@@ -1,4 +1,11 @@
-// Crea iconos  
+// Formulario
+var stringFormulario = "<form name='form' id='formulario'><br><label for='nombre'>Nombre</label><br><input type='text' id='nombre' name='nombre' class='popupInput' placeholder='Nombre o título' required/><br><label for='categoria'>Categoría</label><br><input list='flavors' class='popupInput' id='categoria' name='categoria' placeholder='Elige la categoría' required/><datalist id='flavors'><option value='Abarrotes'><option value='Distribuidoras'><option value='Hortaliceros'><option value='Almacenes'><option value='Farmacias'><option value='Panaderías'><option value='Ferreterías'><option value='Almacenes populares'><option value='Vestuario'><option value='Otro'></datalist><br><label for='direccion'>Dirección</label><br><input type='text' name='direccion' class='popupInput' id='direccion' placeholder='Dirección'><br><label for='telefono'>Teléfono</label><br><input type='text' name='telefono' class='popupInput' id='telefono' placeholder='Teléfono'><br><label for='aceptar'>¿Aceptas aparecer?</label><br><input list='aceptar' name='aceptar' class='popupInput' id='aceptar' placeholder='¿Aceptas aparecer?'/><datalist id='aceptar'><option value='Sí'><option value='No'></datalist><br><input type='submit' class='popupButtons' onclick='connect()' value='Guardar'><input type='button' class='popupButtons' onclick='deleteMarker()' value='Eliminar'></form>";
+
+
+//<br><label for='direccion'>Dirección</label><br><input type='text' name='direccion' class='popupInput' id='direccion' placeholder='direccion'><br>
+
+
+// Iconos  
 var cruzIcon = L.icon({
     iconUrl: 'imagenes/cruz-roja.png',
     iconSize:     [30, 30], // size of the icon
@@ -76,6 +83,27 @@ var violetIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
+var greyIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+var blackIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+// Crea mapa
+var mbAttr = 'Laboratorios Ciberpunk (<a href="../index.html">Visítanos aquí</a>)<br>' + 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>', mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
 
 // Crea layers
 var almacenes = L.layerGroup();
@@ -88,30 +116,15 @@ var cultura = L.layerGroup();
 var graneleros = L.layerGroup();
 var otro = L.layerGroup();
 
-
-//// BASE DATOS
-// Nn
-//L.marker([-33.3920816,-70.6139342], {icon: lechugaIcon}).bindPopup('<b>NN</b><br>Del Valle<br>tel: NN').addTo(hortaliceres);
-// Nn
-//L.marker([-33.1881735132313,-70.6607013372956], {icon: cruzIcon}).bindPopup('<b>NN</b><br>Abate Juan Ignacio Molina 2010<br>tel: NN').addTo(farmacias);
-
-
-var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
-
-
 var streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
-
-
 
 // CREA EL MAPA
 var map = L.map('mapid', {
     center: [-35.03, -70.75],
-    zoom: 6,
+    zoom: 8,
     layers: [streets,abarrotes,distribuidoras,hortalizas,almacenes,farmacias,panaderias,cultura,graneleros,otro]
 });
+map.doubleClickZoom.disable();
 
 var baseLayers = {
     "Rutas": streets
@@ -120,18 +133,18 @@ var baseLayers = {
 var overlays = {
     "Abarrotes y aseo": abarrotes,
     "Distribuidoras": distribuidoras,
-    "Hortaliceros y huertas": hortalizas,
+    "<span style='color:#2AAD27'>Hortaliceros y huertas</span>": hortalizas,
     "Almacenes populares": almacenes,
-    "Farmacias": farmacias,
+    "<span style='color:#CB2B3E'>Farmacias</span>": farmacias,
     "Panaderías": panaderias,
     "Educación y cultura": cultura,
     "Camiones graneleros": graneleros,
     "Otro": otro    
 };
 
-L.control.layers(baseLayers, overlays).addTo(map);
+L.control.layers(null, overlays).addTo(map);
 
-map.locate({setView: true, maxZoom: 10});
+map.locate({setView: true, maxZoom: 13});
       
 function onLocationFound(e) {
     var radius = e.accuracy;
@@ -198,14 +211,17 @@ for (var i=0; i < mymarkers.length; ++i) {
 function onMapClick(e) {
     //marker = L.marker(e.latlng, {draggable: true}).addTo(mymap);
     marker = L.marker(e.latlng).addTo(map);	
-    marker.bindPopup("<form name='form' id='formulario'><br><label for='titulo'>Nombre</label><br><input type='text' id='titulo' name='titulo' class='popupInput' placeholder='Ej Parque, biblioteca, centro cultural, etc' required/><br><label for='choice'>Eje programático</label><br><input list='flavors' class='popupInput' id='choice' name='categoria' placeholder='Asigna a un eje programático' required/><datalist id='flavors'><option value='Democracia y Ciudadanía'><option value='Ecología y Protección ambiental'><option value='Educación'><option value='Salud'><option value='Justicia social y Solidaridad'><option value='Economía local y creativa'><option value='Economía sustentable y a escala humana'><option value='Cultura'><option value='Otro'></datalist><br><label for='titulo'>Descripción</label><br><input type='text' name='descripcion' class='popupInput' id='descripcion' placeholder='¡Expláyate!' required><br><label for='Participar'>¿Quieres participar?</label><br><input list='participar' name='participar' class='popupInput' id='participar2' placeholder='¿Te gustaría que te contactáramos?'/><datalist id='participar'><option value='Sí'><option value='No'></datalist><br><input type='submit' class='popupButtons' onclick='connect()' value='Guardar'><input type='button' class='popupButtons' onclick='deleteMarker()' value='Eliminar'></form>", {closeButton: false, closeOnClick: false, keepInView: true});
+    marker.bindPopup(stringFormulario, {closeButton: false, closeOnClick: false, keepInView: true}).openPopup();
     
-    LATLNG = e.latlng.toString(); //marker.getLatLng();
-    console.log("latlng: " + LATLNG)
-    console.log("type latlng: " + typeof LATLNG)	
+    LAT = e.latlng.lat; //marker.getLatLng();
+    LNG = e.latlng.lng; //marker.getLatLng();    
+    console.log("lat: " + LAT)
+    console.log("lng: " + LNG)
+
 }
 
-map.on('dblclick', onMapClick);  
+map.on('dblclick', onMapClick);
+map.on('contextmenu', onMapClick);  
 
 function deleteMarker() {
     map.removeLayer(marker);
@@ -215,21 +231,30 @@ function connect() {
     var formulario = document.getElementById("formulario");
     
     formulario.addEventListener("submit", function(e) {
-	NMARKERS = NMARKERS + 2;
 	e.preventDefault();
 	console.log("Me diste click") 
 	
 	var datos = new FormData(formulario);
-	datos.append('nombre', NOMBRE)
-	datos.append('latlng', LATLNG);
-	      console.log("latlng inside: " + LATLNG)
+	//datos.append('nombre', NOMBRE)
+	//datos.append('categoria', CATEGORIA)
+	//datos.append('direccion', CATEGORIA)
+	//datos.append('telefono', CATEGORIA)
+	datos.append('lat', LAT);
+	datos.append('lng', LNG);	
+
+	console.log("nombre: " + datos.get('nombre'))
+	console.log("categoria: " + datos.get('categoria'))
+	console.log("direccion: " + datos.get('direccion'))
+	console.log("telefono: " + datos.get('telefono'))
+	console.log("latlng: " + datos.get('lat') + "," + datos.get('lng'))
+	console.log("LNG: " + datos.get('lng'))		
+	//console.log("lat inside: " + LAT)
 	
-	fetch('post2.php', {
+	fetch('post.php', {
 	    method: 'POST',
 	    body: datos
 	})
-	
-	mymap.closePopup();
+	map.closePopup();
     }) 
 }
 

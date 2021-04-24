@@ -68,10 +68,14 @@ html, body, #mapid {
     text-shadow: 0 0 10px #33FF33;  
 }
 
-.hero-text2 {
+.hero-texto-subpagina {
     text-align: center;
     color: #66FF66;
     text-shadow: 0 0 10px #33FF33;  
+}
+
+.hero-texto-subpagina h1 {
+    font-size: 48px;
 }
 
 
