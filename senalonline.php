@@ -83,7 +83,7 @@
 	      <source src=<?php echo "EJR/".$file?> type="audio/mp3">
 		Your browser does not support the audio element.
 	    </audio>
-	    <button onclick="playAudio()" type="button" id="audioButton"><img src="images/play1.png" width="50" height="50"/></button>
+	    <button onclick="playAudio()" type="button" id="audioButton"><img src="imagenes/play1.png" width="50" height="50" alt="Botón de play" /></button>
 	  </div>
 
 	  <!-- Columna 2 -->
@@ -112,14 +112,14 @@
       function playAudio() { 
 	  x.play();
 	  estado.innerHTML = "<b>Sonando</b>";
-	  audioButton.innerHTML = "<img src='images/pause1.png' width='50' height='50'/>";
+	  audioButton.innerHTML = "<img src='imagenes/pause1.png' width='50' height='50' alt='Botón de pausado' />";
 	  audioButton.onclick = pauseAudio;
       } 
       
       function pauseAudio() { 
 	  x.pause();
 	  estado.innerHTML = "<b>Pausado</b>";	  
-	  audioButton.innerHTML = "<img src='images/play1.png' width='50' height='50'/>";
+	  audioButton.innerHTML = "<img src='imagenes/play1.png' width='50' height='50' alt='Botón de play' />";
 	  audioButton.onclick = playAudio;
       } 
     </script>

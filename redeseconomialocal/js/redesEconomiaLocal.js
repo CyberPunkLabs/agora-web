@@ -124,7 +124,28 @@ var map = L.map('mapid', {
     zoom: 8,
     layers: [streets,abarrotes,distribuidoras,hortalizas,almacenes,farmacias,panaderias,cultura,graneleros,otro]
 });
-map.doubleClickZoom.disable();
+//map.doubleClickZoom.disable();
+map.locate({setView: true, maxZoom: 13});
+
+function onLocationFound(e) {
+    var radius = e.accuracy;
+    
+    L.marker(e.latlng).addTo(map).bindPopup("<b>Bienvenido</b><br>Al lado puedes seleccionar rubros y redes de interés<br><br>Haz doble click en el mapa para agregar un punto nuevo.").openPopup();
+    
+    L.circle(e.latlng, radius).addTo(map);
+}
+map.on('locationfound', onLocationFound);
+
+function onLocationError(e) {
+    console.log("location error")
+    alert(e.message);
+    //L.marker([-35.03, -70.75]).addTo(map)
+    //    .bindPopup("<b>Bienvenido</b><br>Al lado puedes seleccionar rubros y redes de interés<br><br>Haz doble click en el mapa para agregar un punto nuevo.").openPopup();
+    
+    //L.circle([-35.03, -70.75], radius).addTo(map);
+}      
+map.on('locationerror', onLocationError);
+
 
 var baseLayers = {
     "Rutas": streets
@@ -141,34 +162,7 @@ var overlays = {
     "Camiones graneleros": graneleros,
     "Otro": otro    
 };
-
 L.control.layers(null, overlays).addTo(map);
-
-map.locate({setView: true, maxZoom: 13});
-      
-function onLocationFound(e) {
-    var radius = e.accuracy;
-    
-    L.marker(e.latlng).addTo(map)
-        .bindPopup("<b>Bienvenido</b><br>Al lado puedes seleccionar rubros y redes de interés<br><br>Haz doble click en el mapa para agregar un punto nuevo.").openPopup();
-    
-    L.circle(e.latlng, radius).addTo(map);
-}
-
-map.on('locationfound', onLocationFound);
-
-
-function onLocationError(e) {
-    console.log("pass")
-	  //alert(e.message);
-    //L.marker([-35.03, -70.75]).addTo(map)
-    //    .bindPopup("<b>Bienvenido</b><br>Al lado puedes seleccionar rubros y redes de interés<br><br>Haz doble click en el mapa para agregar un punto nuevo.").openPopup();
-    
-    //L.circle([-35.03, -70.75], radius).addTo(map);
-}
-      
-map.on('locationerror', onLocationError);
-
 
 for (var i=0; i < mymarkers.length; ++i) {
     
@@ -204,8 +198,7 @@ for (var i=0; i < mymarkers.length; ++i) {
 	  } 
     
     L.marker([mymarkers[i].lat, mymarkers[i].lng], {icon: thisIcon})
-	.bindPopup('<b>' + mymarkers[i].nombre + '</b><br>' + mymarkers[i].direccion + '<br>' + mymarkers[i].tel)
-	.addTo(categoria);
+	.bindPopup('<b>' + mymarkers[i].nombre + '</b><br>' + mymarkers[i].direccion + '<br>' + mymarkers[i].tel).addTo(categoria);
 }
 
 function onMapClick(e) {
@@ -219,7 +212,6 @@ function onMapClick(e) {
     console.log("lng: " + LNG)
 
 }
-
 map.on('dblclick', onMapClick);
 map.on('contextmenu', onMapClick);  
 
@@ -232,13 +224,9 @@ function connect() {
     
     formulario.addEventListener("submit", function(e) {
 	e.preventDefault();
-	console.log("Me diste click") 
+	console.log("Presionaste guardar") 
 	
 	var datos = new FormData(formulario);
-	//datos.append('nombre', NOMBRE)
-	//datos.append('categoria', CATEGORIA)
-	//datos.append('direccion', CATEGORIA)
-	//datos.append('telefono', CATEGORIA)
 	datos.append('lat', LAT);
 	datos.append('lng', LNG);	
 
@@ -247,8 +235,6 @@ function connect() {
 	console.log("direccion: " + datos.get('direccion'))
 	console.log("telefono: " + datos.get('telefono'))
 	console.log("latlng: " + datos.get('lat') + "," + datos.get('lng'))
-	console.log("LNG: " + datos.get('lng'))		
-	//console.log("lat inside: " + LAT)
 	
 	fetch('post.php', {
 	    method: 'POST',
