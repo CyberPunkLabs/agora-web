@@ -54,6 +54,29 @@
 	  padding-left: 10px;
 	  border-left: 1px dashed;
       }
+
+      .column-all a:link {
+	  color: #66FF66;
+	  text-shadow: 0 0 10px #33FF33;  	  
+      }
+      
+      .column-all a:visited {
+	  text-decoration: none;	  
+	  color: #66FF66;
+	  text-shadow: 0 0 10px #33FF33;  
+      }
+      
+      .column-all a:hover {
+	  text-decoration: none;	  
+	  color: white;
+	  text-shadow: 0 0 10px #33FF33;  	  
+      }
+      
+      .column-all a:active {
+	  text-decoration: none;
+	  color: white;
+	  text-shadow: 0 0 10px #33FF33;  
+      }
       
     </style>
     
@@ -97,7 +120,7 @@
 	<div class="row">
 	  <div class="column-all">
 	    Laboratorios Ciberpunk<br>
-	    Una red de sistemas nerviosos orgánicamente interconectados
+	    <a href="index.html">Visítanos aquí</a>
 	  </div>
 	</div>
 
