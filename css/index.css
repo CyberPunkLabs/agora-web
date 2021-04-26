@@ -90,8 +90,7 @@ body {
 
 .hero-text a {
     color: #66FF66;
-    text-shadow: 0 0 10px #33FF33;    
-    
+    text-shadow: 0 0 10px #33FF33;        
 }
 
 .hero-text a:link {
@@ -110,6 +109,15 @@ body {
     text-decoration: none;
 }
 
+.bordered {
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;    
+    box-shadow: inset 0 0 0 2px  #33FF33; /*  #CC0000;*/   
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0.5em 3em;
+    font-size: 20px;
+}
 
 .hero-text button {
     background-color: black; /*#282828;*/
@@ -180,7 +188,8 @@ body {
 /* BANNER 2 */
 .hero-imagen-subpagina {
     background-image: url("../imagenes/subbanner_test.png");
-    height: 30%;
+    height: 40%;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -204,11 +213,11 @@ body {
     font-size: 48px;
 }
 
-
 /* BANNER 2 */
 .hero-image2 {
     background-image: url("../imagenes/subbanner_test.png");
     height: 50%;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -265,7 +274,7 @@ body {
     text-align: left;
     width: 70%;
     /*margin: 0 auto;*/
-    padding-top: 5em;
+    padding-top: 3.5em;
     margin-left: 1em;
     background-color: black; /* #282828;*/
     color: #66FF66;
@@ -273,8 +282,8 @@ body {
 }
 
 .seccion-principal-subpaginas h2 {
-    text-align: center;
-    font-size: 48px;
+    text-align: left;
+    font-size: 46px;
 }
 
 /* COLUMNAS */

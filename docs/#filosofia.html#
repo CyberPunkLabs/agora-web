@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laboratorios Ciberpunk</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+
+
+<!-- ########## -->
+<!--    Body    -->
+<body>
+
+<!-- HEADER: NAVBAR
+<header>
+  <div class="navbar-secundaria">
+    <a href="../index.html">Ágora</a>
+  </div>
+</header>
+-->
+
+<!-- TÍTULO -->
+<div class="hero-imagen-subpagina">
+  <div class="hero-texto-subpagina">    
+    <h1>Laboratorios Ciberpunk</h1>
+    <h2>¡Únete a nuestra red de producción y difusión democrática!</h2>
+    <p style="font-size:18px;"><a href="#footerId">Ciencia y Tecnología | Economía y RRSS | Educación libertaria</a></p><br />
+    <p style="text-align:center;"><a href="mailto:laboratoriosciberpunk@protonmail.com" class="bordered">Contáctanos</a></p>
+    <br />
+
+  </div>
+</div>
+
+<!-- CUERPO -->
+<div>
+<section class="seccion-principal-subpaginas">
+<h2 style="font-size:32px;text-align:left;">Filosofía política</h2>
+  <h3>Nuestra filosofía política</h3>
+<p>Profundizaremos a la brevedad. Mientras, te contamos que adscribimos al <a href="slowscience.html"> Slow science manifesto.</a></p>
+
+<hr>
+
+<h3>Sistema de propiedad comunitario</h3>
+<p>En construcción. Pronto te describiremos nuestro sistema de propiedad comunitario.</p>
+<hr>
+
+<h3>Licencia Copyleft</h3>
+<p>Nuestros derechos de propiedad intelectual adscriben a los principios de Copyleft y propiedad comunal.</p>
+
+<hr>
+
+<h3>¿Quieres participar, y sabes cómo? ¿Quieres participar, pero <i>no</i> sabes cómo?</h3>
+<p>Simple: ¡escríbenos!</p>
+
+</section>
+</div>
+    <!-- FOOTER -->
+    <footer class="index-footer">
+      
+      <h1 id="footerId">¡CONTÁCTANOS!</h1>
+      
+      <div style="text-align:center;">
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-instagram"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a target="_blank" rel="noopener noreferrer" href="https://github.com/CyberPunkLabs" class="fa fa-github"></a>
+      </div>
+      
+      <br>
+      <p>Escríbenos a <a href="mailto:laboratoriosciberpunk@protonmail.com"><i>laboratoriosciberpunk@protonmail.com<i></a> o directamente <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/YWKRfZFtcZ">únetenos en Discord</a></p>
+      <br>
+      
+      <!-- Columnas -->
+      <div class="row">
+	
+	<div class="footer-column">
+	  <h4>LABORATORIOS CIBERPUNK</h4>
+	  <ul>
+	    <li><a href="../index.html">Inicio</a></li>
+	    <li><a href="../docs/filosofia.html">Quiénes somos</a></li>
+	    <li><a href="../unete.html">¡Únete!</a></li>
+	  </ul>    
+	</div>
+
+	<div class="footer-column">
+	  <h4>CIENCIA Y TECNOLOGÍA</h4>
+	  <ul>
+	    <li><a href="../unete.html">Análisis de datos</a></li>
+	    <li><a href="https://discord.gg/BrypEwTUzT">Equipos de ciencia</a></li>      
+	    <li><a href="../unete.html">Acceso a servidores</a></li>
+	    <li><a href="../desarrollo.html">Desarrollo de aplicaciones</a></li>      
+	  </ul>    
+	</div>
+		
+	<div class="footer-column">
+	  <h4>ECONOMÍA Y RRSS</h4>
+	  <ul>
+	    <li><a href="../redeseconomialocal/inicio.html">Red de productores</a></li>
+	    <li><a href="../unete.html">Monedas sociales</a></li>
+	    <li><a href="#" onclick="window.open('senalonline.php', '','width=450,height=167')">Early jazz radio</a></li>
+	    <li><a href="../unete.html">Red de medios</a></li>
+	  </ul>    
+	</div>
+
+	<div class="footer-column">
+	  <h4>EDUCACIÓN LIBERTARIA</h4>
+	  <ul>
+	    <li><a href="#">Series y documentales</a></li>      
+	    <li><a href="../diccionario-neolengua/inicio.html"><i>I Diccionario de Neolengua</i></a></li>
+	    <li><a href="../tutoriales.html">Tutoriales</a></li>
+	    <li><a href="../unete.html">Vínculos con instituciones</a></li>
+	  </ul>    
+	</div>
+	
+      </div>
+      
+      <br><br>
+      <p>Hosted by a <a href="https://discord.gg/BrypEwTUzT"><i>CyberPunk Server</i></a></p>
+      <!-- <p>Abre una ventana con tamaño y forma de terminal y pide datos de contacto para acceder a Discord o al server</p> -->
+    </footer>
+
+
+</body>
+</html>
