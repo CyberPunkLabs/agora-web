@@ -102,7 +102,7 @@
 	<div class="row">
 	  <!-- Columna 1 -->
 	  <div class="col1">
-	    <audio id="myAudio">
+	    <audio id="myAudio" autoplay="autoplay" onended="nextSong()">
 	      <source src=<?php echo "EJR/".$file?> type="audio/mp3">
 		Your browser does not support the audio element.
 	    </audio>
@@ -119,15 +119,14 @@
 	<!-- Columna institucion -->
 	<div class="row">
 	  <div class="column-all">
-	    Laboratorios Ciberpunk<br>
-	    <a href="index.html">Visítanos aquí</a>
+	    Cortesía: David W. Nieven<br>
+	    Laboratorios Ciberpunk <a href="index.html">[Visítanos aquí]</a>
 	  </div>
 	</div>
 
     </section>    
 
-
-    
+    <!-- Javascript -->
     <script>
       var x = document.getElementById("myAudio");
       var audioButton = document.getElementById("audioButton")
@@ -144,9 +143,14 @@
 	  estado.innerHTML = "<b>Pausado</b>";	  
 	  audioButton.innerHTML = "<img src='imagenes/play1.png' width='50' height='50' alt='Botón de play' />";
 	  audioButton.onclick = playAudio;
-      } 
-    </script>
-
+      }
+      
+      function nextSong() {
+          location.reload();
+      }
+      
+      </script>
+    
   </body>
 </html>
 

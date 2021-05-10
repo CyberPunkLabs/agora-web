@@ -286,6 +286,12 @@ body {
     font-size: 46px;
 }
 
+.seccion-principal-subpaginas a {
+    color: white;
+    text-decoration: none;
+}
+
+
 /* COLUMNAS */
 /* Create three equal columns that floats next to each other */
 .column {

@@ -1,54 +1,84 @@
 <!DOCTYPE HTML>
 <html>
-
-<!-- Head -->
-<head>
-<title>Seguridad servidores - El Ágora</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="../css/main.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-
-<!-- Body -->
-<body>
-
-<!-- HEADER: NAVBAR -->
-<header>
-  <div class="navbar-secundaria">
-    <a href="../index.html">Ágora</a>
-  </div>
-</header>
-
-
-<!-- Three -->
-<section class="scripts">
+  
+  <!-- Head -->
+  <head>
+    <title>Seguridad servidores - Laboratorios Ciberpunk</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <!-- Body -->
+  <body>
+    <!-- HEADER: NAVBAR -->
+    <header>
+      <div class="navbar-secundaria">
+	<a href="../index.html">Laboratorios Ciberpunk</a>
+      </div>
+    </header>
+    
   <header>
   <h1>Apuntes de seguridad para servidores</h1>
-    <p>por <i>Diógenes</i> | versión actual: 2020-10-17</p>
+    <p>por <i>Diógenes</i> | versión original: octubre 2020 | última revisión: abril 2021</p>
     <p>Somos una red de sistemas nerviosos distribuidos alrededor del globo</p>
     </header>
 
    <hr>
 
   <h3>Índice</h3>
-  <ul>
-    <li><a href="#ref1">Parte I:</a> Al instalar el sistema</li>
-    <li><a href="#ref2">Parte II:</a> Al iniciar el sistema</li>
-    <li><a href="#ref3">Parte III:</a> Al conectar a internet</li>
+  <ol>
+    
+    <li><a href="#intro">Introducción</a></li>    
+    <br>
+    <li><a href="#instalar-servidor">Instalar el servidor</a></li>
     <ul>
-      <li><a href="#ref3.1">1.</a> Endurecer /etc/sysctl.conf</li>
-      <li><a href="#ref3.2">2.</a> Conectar red cableada</li>
-      <li><a href="#ref3.3">3.</a> Software anti rootkits</li>
-      <li><a href="#ref3.4">4.</a> Firewall</li>
-      <li><a href="#ref3.5">5.</a> Fail2ban</li>
-      </ul>
-    <li><a href="#ref4">Parte IV:</a> Endurecer ssh</li>
-    <li><a href="#ref5">Parte V:</a>Instalar y endurecer servidor web</li>    
+      <li><a href="#primeros-pasos">Instalar Ubuntu Server</a></li>
+      Instalar el sistema | Instalar <i>unattended-upgrades</i>
+      <li><a href="#iniciar-sistema">Al iniciar el sistema</a></li>
+      Añadir usuario a grupo <i>admin</i> | Bloquear cuenta <i>root</i> | Corregir reglas <i>sysctl</i> 
+      <li><a href="#conectar-internet">Al conectar a internet</a></li>
+      Instalar firewall (ufw) | rkhunter y chkrootkit | fail2ban | apparmor | logwatch | psad | tripwire
+      <li><a href="#diagnostico1">[Apéndice] Herramientas de diagnóstico</a></li>      
     </ul>
-  <hr>
+    <br>    
+    <li><a href="#instalar-ssh">Instalar y endurecer ssh</a></li>
+    <ul>
+      <li><a href="#elevar-puerto">Elevar puerto</a></li>      
+      <li><a href="#crear-llave">Creación llave privada</a></li>
+      <li><a href="#configurar-sshd">Configurar <i>sshd_config</i></a></li>
+      <li><a href="#diagnostico2">[Apéndice] Herramientas de diagnóstico</a></li>      
+    </ul>
+    <br>
+    <li><a href="#instalar-web">Instalar y endurecer servidor web</a></li>
+    <ul>
+      <li><a href="#primeros-pasos">Apache y certbot</a></li>
+      <li><a href="#crear-pagina">Crea una página web simple</a></li>            
+      <li><a href="#iniciar-sistema">Configurar <i>apache2.conf</i></a></li>
+      HTTP/2 | timeout | Negar acceso directo a carpetas
+      <li><a href="#conectar-internet">Configurar <i>security.conf</i></a></li>
+      Restringir acceso a headers | Eliminar firmas del servidor | Deshabilitar <i>tracing</i> | Eliminar headers e <i>etags</i> | Eliminar modulos autoindex
+      <li><a href="#conectar-internet">Evitar ataques DDOS con <i>mod-evasive</i></a></li>
+      <li><a href="#conectar-internet">Ataques <i>slowloris</i></a></li>
+      <li><a href="#conectar-internet">Módulo <i>spamhaus</i></a></li>
+      <li><a href="#conectar-internet">Protección de módulos PHP</a></li>
+      <li><a href="#conectar-internet">Configurar <i>modsecurity</i></a></li>
+      <li><a href="#publicar-pagina">Publica tu página web</a></li>                  
+      <li><a href="#diagnostico3">[Apéndice] Herramientas de diagnóstico</a></li>            
+    </ul>
+    <br>
+    <li><a href="#instalar-web">Conclusiones</a></li>
+    <br>
+    <li><a href="#instalar-web">Referencias</a></li>
+    </ol>
 
+    <hr>
+
+    
+<!-- Secciones -->
+<section class="scripts">
+    
   <h3>Consejos</h3>
   Si tipeas los comandos, a la larga te los terminarás aprendiendo de memoria.
   <hr>

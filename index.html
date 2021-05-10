@@ -18,13 +18,37 @@
     <div class="hero-image">
       <div class="hero-text">
 	<h1>Laboratorios Ciberpunk</h1>
-	<p style="font-size:20px">Producción y difusión democrática</p>
+	<p id="greeting" style="font-size:20px">Producción y difusión democrática</p>
 	<p>Lee nuestra <a href="docs/filosofia.html"><u>filosofía política</u></a> y el <a href="docs/slowscience.html"><i><u>Slow science manifesto</u></i></a></p>
 	<p style="font-size:18px;"><a href="#footerId">Ciencia y Tecnología | Economía y RRSS | Educación libertaria</a></p><br />
-	<p><a href="unete.html" class="bordered">Únete</a></p><br>
+	<p><a href="#footerId" class="bordered">Contáctanos</a></p><br>
 <!--	<p>Desplejar frases, slogans, anuncios, etc por JavaScript</p>    -->
       </div>
     </div>
+
+    
+    <script id="javascript">
+    // Cambia el texto cada 3 segundos
+      var text = ["La libertad se vive en los márgenes", "Si se puede hackear, ¡hackéalo!", "Abajo las barreras de acceso al conocimiento", "sudo apt install anarchy", "Producción y difusión democrática"];
+      var elem = document.getElementById("greeting");
+      setInterval(change, 15000);
+      function change() {
+	  counter1 = between(0, text.length - 1);	  
+	  elem.innerHTML = text[counter1];
+          //counter1++;
+          //if(counter1 >= text.length) { counter1 = 0; }
+
+	  function between(min, max) {  
+	      return Math.floor(
+		  Math.random() * (max - min + 1) + min
+	      )
+	  }
+	  // Imprime en consola
+	  console.log(counter1)
+      }
+
+    </script>
+    
     
     <!-- <script src="assets/js/mapa.js"></script> -->
     <!-- MENU INVESTIGACION -->
@@ -35,13 +59,13 @@
 	  <!-- Investiga -->
 	  <li><a href="unete.html">
 	      <h2>Investigación y desarrollo en comunidad</h2>
-	      <p>Asesoramos el diseño, análisis y publicación de tu investigación.</p>      
+	      <p>Únetenos y asesoraremos el diseño, análisis y publicación de tu investigación.</p>      
 	  </a></li>
 	  
 	  <!-- Filosofia politica -->
 	  <li><a href="docs/filosofia.html">
 	      <h2>Nuestra filosofía política</h2>
-	      <p>No queremos barreras de acceso a los medios de producción y subsistencia.</p>
+	      <p>No queremos barreras de acceso a los medios de producción de tecnologías y conocimiento.</p>
 	  </a></li>
 	  
 	  <!-- Acceso servidores -->
@@ -56,20 +80,48 @@
 
     <!-- BANNER SECUNDARIO -->
     <div class="hero-image2">
-      <a href="redeseconomialocal/inicio.html">
+      <a id="enlace" href="redeseconomialocal/inicio.html">
 	<div class="hero-texto-subpagina">
 	  <h3 style="font-size:40px;">Destacados</h3>
-	  <p style="font-size:40px;font-color=green;">Redes de economía local</p>
-	  <p style="font-size:15px">Redes geolocalizadas de producción local<br>Construcción colaborativa. Cerca de tí.<br>Inscripciones abiertas</p>
+	  <p id="titulo" style="font-size:40px;font-color=green;">Redes de economía local</p>
+	  <p id="descripcion" style="font-size:15px">Redes geolocalizadas de producción local<br>Construcción colaborativa. Cerca de tí.<br>Inscripciones abiertas</p>
 	</div>
       </a>
-    </div>
-    
-      <hr>
+    </div>    
+    <hr>
+
+    <script id="javascript">
+      // Cambia el texto cada 3 segundos
+      var text1 = ["Desarrollo de ingenios y apps", "Early jazz radio [Señal online]", "Redes de economía local"];
+      var text2 = ["El Procrastinador inteligente, utiliza el método de trabajo de Jefferson y Feynman, pero al revés. <br>Colaboremos también en GranMaster —un tutor de ajedrez implementado sobre Stockfish—,<br>la Red de economía local, o alguna idea que tengas en mente.", "Cintas inéditas del periodo primigenio del jazz.<br>Escucha a Bird, Thelonious, Ella, Dizzie.<br>Recopiladas, relatadas y donadas al dominio público por David W. Nieven.", "Redes geolocalizadas de producción local<br>Construcción colaborativa. Cerca de tí.<br>Inscripciones abiertas"];
+      var text3 = ["desarrollo.html", "senalonline.php", "redeseconomialocal/inicio.html"]
+      
+      var titulo = document.getElementById("titulo");
+      var descripcion = document.getElementById("descripcion");
+      var enlace = document.getElementById("enlace");
+      setInterval(change, 12000);
+      function change() {
+	  counter2 = between(0, text1.length - 1);	  
+	  titulo.innerHTML = text1[counter2];
+	  descripcion.innerHTML = text2[counter2];
+	  enlace.href = text3[counter2];
+	  
+	  // Imprime en consola
+	  console.log("Contador Destacados: " + counter2)
+	  
+	  function between(min, max) {  
+	      return Math.floor(
+		  Math.random() * (max - min + 1) + min
+	      )
+	  }
+      }
+
+    </script>
+
     
     <!-- SECCION DESTACADOS -->
     <section class="seccion-principal">
-
+      
       <!-- Primera fila -->
       <div class="row">
 	
@@ -87,7 +139,7 @@
 	  <a href="redeseconomialocal/inicio.html">    
 	    <h3>Redes de economía local</h3></a>
 	  <img src="imagenes/productores.png" alt="Redes de economía" class="center"> 
-	  <a href="redeseconomialocal/inicio.html"><p>Redes geolocalizadas de producción local (farmacias no coludidas, pequeños y medianos productores, ferreterías, vestuario y más). Construcción colaborativa.</p></a>
+	  <a href="redeseconomialocal/inicio.html"><p>Redes geolocalizadas de producción local (farmacias no coludidas, pequeñas/os y medianas/os productores, ferreterías, vestuario y más). Construcción colaborativa.</p></a>
 	</div>
     
 	<!-- Señal online -->
@@ -95,7 +147,7 @@
 	  <a href="" onclick="window.open('senalonline.php', '','width=450px,height=200px')"> 
 	    <h3>Early jazz radio [Señal online]</h3>
 	    <img src="imagenes/thelonious.jpg" alt="Telonious Monk al piano" class="center">     
-	    <p>Cintas inéditas y primigenias del jazz (Bird, Thelonious, Ella, Dizzie, entre decenas más), sonando 24/7. Recopiladas, relatadas y donadas <!-- al <a href="www.archive.org">dominio público</a> --> por David W. Nieven.</p>
+	    <p>Cintas inéditas del periodo primigenio del jazz. Escucha aBird, Thelonious, Ella, Dizzie, entre decenas más, sonando 24/7. Recopiladas, relatadas y donadas al dominio público <!-- <span><a target="_blank" rel="noopener noreferrer" href="www.archive.org">dominio público</a></span> --> por David W. Nieven.</p>
 	  </a>
 	</div>
 	
@@ -139,7 +191,7 @@
 	  <a href="unete.html">        
 	    <h3>Accede a nuestros servidores</h3>
 	    <img src="imagenes/servers.jpeg" alt="Girl in a jacket" class="center">         
-	    <p>Puedes análizar datos, aprender linux y uso de servidores, o entrenar competencias de hackeo ético. [Abre javascript emulando terminal que solicita llenar formulario]</p>
+	    <p>Puedes análizar datos, aprender linux y uso de servidores, o entrenar competencias de hackeo ético.</p>
 	  </a>
 	</div>
 
@@ -154,10 +206,10 @@
 	
 	<!-- Sorpresas --> 
 	<div class="column">
-	  <a href="#">    
-	    <h3>PRONTO</h3>
+	  <a href="unete.html">    
+	    <h3>Buscamos socias/os y colaboradores/as</h3>
 	    <img src="imagenes/arduino.png" alt="Girl in a jacket" class="center">     
-	    <p>Tendremos sorpresas...</p>
+	    <p>Además, estamos contratando gente.</p>
 	  </a>
 	</div>
 	
@@ -189,7 +241,7 @@
       </div>
       
       <br>
-      <p>Escríbenos a <a href="mailto:laboratoriosciberpunk@protonmail.com"><i>laboratoriosciberpunk@protonmail.com<i></a> o directamente <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/YWKRfZFtcZ">únetenos en Discord</a></p>
+      <p>Escríbenos a <a href="mailto:laboratoriosciberpunk@protonmail.com"><i>laboratoriosciberpunk@protonmail.com<i></a> o directamente <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/NR3X9ZvbGK">únetenos en Discord</a></p>
       <br>
       
       <!-- Columnas -->
@@ -237,7 +289,7 @@
       </div>
       
       <br><br>
-      <p>Hosted by a <a href="https://discord.gg/BrypEwTUzT"><i>CyberPunk Server</i></a></p>
+      <p>Hosted by a <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/NR3X9ZvbGK"><i>CyberPunk Server</i></a></p>
       <!-- <p>Abre una ventana con tamaño y forma de terminal y pide datos de contacto para acceder a Discord o al server</p> -->
     </footer>
     
